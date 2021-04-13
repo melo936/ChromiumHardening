@@ -13,23 +13,21 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-browsing-data-lifetime-manager
 * #enable-heavy-ad-intervention
 * #enable-webrtc-hide-local-ips-with-mdns
-* #force-effective-connection-type - **Slow 2G on Cellular** or **Unknown**
+* #force-effective-connection-type - **Unknown** (Use **Slow 2G on Cellular** for Android)
 * #freeze-user-agent
 * #heavy-ad-privacy-mitigations
+* #http-cache-partitioning
 * #isolate-origins
 * #isolation-by-default
-	* Captchas are broken.
+	* Breaks captchas and DevTools
 * #legacy-tls-enforced
 * #mixed-forms-disable-autofill
 * #mixed-forms-interstitial
 * #omnibox-default-typed-navigations-to-https
 * #post-quantum-cecpq2
-* #restrict-gamepad-access
-* #safety-tips
 * #same-site-by-default-cookies
 * #schemeful-same-site
 * #strict-origin-isolation
-* #treat-unsafe-downloads-as-active-content
 </p></details>
 
 <details><summary>Disabled:</summary><p>
@@ -52,7 +50,6 @@ In order to modify flags, you must access `chrome://flags`
 * #enterprise-realtime-extension-request
 * #file-handling-api
 * #font-access
-* #font-access-chooser
 * #font-access-persistent
 * #form-controls-dark-mode
 * #happiness-tracking-surveys-for-desktop-demo
@@ -63,7 +60,6 @@ In order to modify flags, you must access `chrome://flags`
 * #hardware-media-key-handling
 * #load-media-router-component-extension
 * #privacy-sandbox-settings
-* #safe-browsing-enhanced-protection-message-in-interstitials
 * #safe-browsing-real-time-url-lookup-enterprise-ga-endpoint
 * #safety-check-chrome-cleaner-child
 * #send-webui-javascript-error-reports
@@ -98,16 +94,13 @@ In order to modify flags, you must access `chrome://flags`
 <details><summary>Disabled</summary><p>
 
 * #desktop-in-product-help-snooze
-* #detect-target-embedding-lookalikes
 * #enable-media-feeds
 * #enable-media-feeds-background-fetch
-* #enable-native-notifications
 * #enable-translate-sub-frames
 * #in-product-help-demo-mode-choice
 * #media-router-cast-allow-all-ips
 * #ntp-cache-one-google-bar
 * #omnibox-bubble-url-suggestions
-* #omnibox-local-zero-suggest-frecency-ranking
 * #passwords-account-storage
 * #passwords-account-storage-iph
 * #raw-clipboard
@@ -130,7 +123,6 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-lite-video
 * #enable-skia-renderer
 * #enable-webassembly-lazy-compilation
-* #intensive-wake-up-throttling - **Enabled** (10 sec can be used, as well)
 * #lite-video-force-override-decision
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
 * #turn-off-streaming-media-caching-always
@@ -144,8 +136,8 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-zero-copy
 * #ignore-gpu-blocklist
 * #use-angle
-	* According to the flag's description using the OpenGL driver as the graphics backend may result in higher performance
-	* D3D11 is default; D3D12 may improve performance if you are using Windows 10 1709 or newer.
+	* According to the flag's description, using the OpenGL driver as the graphics backend may result in higher performance
+	* D3D11 is used by default; D3D12 may improve performance if you are using Windows 10 1709 or newer.
 </p></details>
 
 ## Android
@@ -167,6 +159,7 @@ In order to modify flags, you must access `chrome://flags`
 	* If you don't like new icons in menu, you can keep this flag disabled. `#tabbed-app-overflow-menu-regroup` and `#tabbed-app-overflow-menu-three-button-actionbar` won't have any effect.
 * #tabbed-app-overflow-menu-regroup - **Enabled**
 * #tabbed-app-overflow-menu-three-button-actionbar - **Enabled (three button with action chip view)**
+* #omnibox-native-voice-suggestions-provider - **Disabled**
 </p></details>
 
 <details><summary>Disabled</summary><p>
