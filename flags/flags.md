@@ -31,7 +31,6 @@ In order to modify flags, you must access `chrome://flags`
 </p></details>
 
 <details><summary>Disabled:</summary><p>
-
 * #allow-sync-xhr-in-page-dismissal
 * #cast-media-route-provider
 * #enable-first-party-sets
@@ -47,6 +46,8 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-sxg-prefetch-cache-for-navigations
 * #enable-sxg-subresource-prefetching
 * #enable-webrtc-remote-event-log
+* #enable-winrt-geolocation-implementation
+	* You might need to enable it for Maps
 * #enterprise-realtime-extension-request
 * #file-handling-api
 * #font-access
@@ -62,20 +63,21 @@ In order to modify flags, you must access `chrome://flags`
 * #privacy-sandbox-settings
 * #safe-browsing-real-time-url-lookup-enterprise-ga-endpoint
 * #safety-check-chrome-cleaner-child
-* #send-webui-javascript-error-reports
 * #show-autofill-type-predictions
 * #trust-tokens
 * #use-first-party-set
 * #use-multilogin-endpoint
 * #web-bundles
+* #web-share
 </p></details>
-
 
 ## Usability
 
 <details><summary>Enabled</summary><p>
 
 * #content-settings-redesign
+* #enable-force-dark
+	* Personal preference
 * #enable-new-profile-picker
 * #enable-parallel-downloading
 * #enable-reader-mode
@@ -105,6 +107,8 @@ In order to modify flags, you must access `chrome://flags`
 * #passwords-account-storage-iph
 * #raw-clipboard
 * #sharing-qr-code-generator
+* #smooth-scrolling
+	* Personal preference
 * #sms-receiver-cross-device
 * #tab-hover-cards
 * #username-first-flow

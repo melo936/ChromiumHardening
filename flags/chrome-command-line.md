@@ -113,14 +113,14 @@ Others:
 * LangClientHintHeader
 	* Blocks handling of accept-language via client hints
 * MediaDrmPreprovisioning
-	* Blocks DRM
+	* Blocks DRM (Might break Netflix and Spotify)
 * NetworkTimeServiceQuerying
 	* Disables network time queries in order to prevent Chromium connecting to `clients2.google.com`
 * NotificationTriggers
 * PasswordCheck
 	* We don't need Google checking our passwords
 * SafeBrowsingEnhancedProtection
-	* Block Safe Browsing
+	* Blocks Safe Browsing
 * TextFragmentAnchor
 	* Disables text snippets in URL fragments
 * UserAgentClientHint
