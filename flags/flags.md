@@ -31,6 +31,7 @@ In order to modify flags, you must access `chrome://flags`
 </p></details>
 
 <details><summary>Disabled:</summary><p>
+
 * #allow-sync-xhr-in-page-dismissal
 * #cast-media-route-provider
 * #enable-first-party-sets

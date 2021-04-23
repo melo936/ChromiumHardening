@@ -8,7 +8,7 @@ I am not responsible for any direct or indirect consequences/damage resulting fr
 * Less (or no) home calling
 * Privacy & security improvements
 * Better performance
-	* RAM usage might be increased due to isolation
+	* CPU and RAM usage might be increased due to isolation
 * Strictly block mixed active and passive content
 * Better browsing usability without sacrificing privacy
 
