@@ -34,6 +34,7 @@ In order to modify flags, you must access `chrome://flags`
 
 * #allow-sync-xhr-in-page-dismissal
 * #cast-media-route-provider
+* #compute-pressure
 * #enable-first-party-sets
 * #enable-generic-sensor-extra-classes
 * #enable-preconnect-to-search
