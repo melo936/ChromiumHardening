@@ -7,6 +7,7 @@ In order to modify flags, you must access `chrome://flags`
 <details><summary>Enabled:</summary><p>
 
 * #block-insecure-private-network-requests
+* #clear-cross-browsing-context-group-main-frame-name
 * #cookies-without-same-site-must-be-secure
 * #disallow-doc-written-script-loads
 * #dns-httpssvc
@@ -81,7 +82,6 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-force-dark
 	* Personal preference
 * #enable-new-profile-picker
-* #enable-parallel-downloading
 * #enable-reader-mode
 * #global-media-controls-cast-start-stop
 * #global-media-controls-modern-ui
@@ -127,6 +127,7 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-lazy-frame-loading - **Enabled (Automatically lazily load where safe even if not marked "loading=lazy")**
 * #enable-lazy-image-loading - **Enabled (Automatically lazily load where safe even if not marked "loading=lazy")**
 * #enable-lite-video
+* #enable-parallel-downloading
 * #enable-skia-renderer
 * #enable-webassembly-lazy-compilation
 * #lite-video-force-override-decision
@@ -137,7 +138,7 @@ In order to modify flags, you must access `chrome://flags`
 **These flags are not intented for every device, but worth testing**
 * #enable-accelerated-video-decode
 	* Enabled by default on Windows (probably on MacOS, too), yet not on Linux.
-	* Use ``chrome://media-iternals`` to verify if you're actually getting hardware accelerated video decoding or not. [Read more](https://old.reddit.com/r/linux/comments/k5s4n5/google_chrome_v88_got_hardwareaccelerated/gehwpak/)
+	* Use ``chrome://media-iternals`` to verify if you are actually getting hardware accelerated video decoding or not. [Read more](https://old.reddit.com/r/linux/comments/k5s4n5/google_chrome_v88_got_hardwareaccelerated/gehwpak/)
 * #enable-gpu-rasterization
 * #enable-zero-copy
 * #ignore-gpu-blocklist
@@ -182,6 +183,7 @@ In order to modify flags, you must access `chrome://flags`
 
 * #brave-adblock-cosmetic-filtering - **Enabled**
 * #brave-adblock-cosmetic-filtering-native - **Enabled**
+* #brave-adblock-csp-rules - **Enabled**
 * #brave-domain-block - **Enabled**
 * #brave-ephemeral-storage - **Enabled**
 * #brave-extension-network-blocking - **Enabled**
