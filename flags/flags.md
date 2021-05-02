@@ -13,8 +13,11 @@ In order to modify flags, you must access `chrome://flags`
 * #dns-httpssvc
 * #enable-browsing-data-lifetime-manager
 * #enable-heavy-ad-intervention
+* #enable-web-bluetooth-new-permissions-backend
+	* Go to chrome://settings/content/bluetoothDevices and disable the permission
+	* On Android, Go to Settings → Site Settings → Bluetooth → Disable the permission
 * #enable-webrtc-hide-local-ips-with-mdns
-* #force-effective-connection-type - **Unknown** (Use **Slow 2G on Cellular** for Android)
+* #force-effective-connection-type - **Slow 2G**
 * #freeze-user-agent
 * #heavy-ad-privacy-mitigations
 * #http-cache-partitioning
