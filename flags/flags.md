@@ -125,6 +125,7 @@ In order to modify flags, you must access `chrome://flags`
 
 * #audio-worklet-realtime-thread
 * #back-forward-cache - **Enabled force caching all pages (experimntal)**
+* #calculate-native-win-occlusion
 * #delay-competing-low-priority-requests
 * #enable-defer-all-script
 * #enable-lazy-frame-loading - **Enabled (Automatically lazily load where safe even if not marked "loading=lazy")**
