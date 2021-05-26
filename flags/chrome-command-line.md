@@ -1,7 +1,7 @@
 ## Command Line
 
 ```
---block-new-web-contents --disable-background-networking --disable-breakpad --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-notifications --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --no-pings --site-per-process --use-fake-device-for-media-stream --enable-features=AppendFrameOriginToNetworkIsolationKey,BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,ImprovedCookieControlsIsolateOrigins,LegacyTLSEnforced,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PrefetchPrivacyChanges,ReducedReferrerGranularity,SplitAuthCacheByNetworkIsolationKey,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,UseRegistrableDomainInNetworkIsolationKey --disable-features=AppActivityReporting,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,CrashReporting,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,DirectSockets,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,FederatedLearningOfCohorts,FlocIdComputedEventLogging,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,LangClientHintHeader,MediaDrmPreprovisioning,NetworkTimeServiceQuerying,NotificationTriggers,PasswordCheck,Reporting,SafeBrowsingEnhancedProtection,SignedExchangeReportingForDistributors,SubresourceWebBundles,TextFragmentAnchor,UserAgentClientHint,WebNFC,WebUSB,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation --connectivity-check-url=0.0.0.0 --crash-server-url=0.0.0.0 --gaia-url=0.0.0.0 --gcm-checkin-url=0.0.0.0 --gcm-mcs-endpoint=0.0.0.0 --gcm-registration-url=0.0.0.0 --google-apis-url=0.0.0.0 --google-base-url=0.0.0.0 --google-doodle-url=0.0.0.0 --lso-url=0.0.0.0 --oauth-account-manager-url=0.0.0.0 --override-metrics-upload-url=0.0.0.0 --realtime-reporting-url=0.0.0.0 --sync-url=0.0.0.0 --variations-server-url=0.0.0.0 --cipher-suite-blacklist=0xc013,0xc014,0x009c,0x009d,0x002f,0x0035 --enable-strict-mixed-content-checking --js-flags=--noexpose_wasm
+--block-new-web-contents --disable-background-networking --disable-breakpad --disable-composited-antialiasing --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-notifications --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --no-pings --num-raster-threads=4 --process-per-site --site-per-process --use-fake-device-for-media-stream --enable-features=AudioWorkletThreadRealtimePriority,BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,ImprovedCookieControlsIsolateOrigins,LegacyTLSEnforced,MinimizeAudioProcessingForUnusedOutput,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PrefetchPrivacyChanges,ReducedReferrerGranularity,SplitAuthCacheByNetworkIsolationKey,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,UseRegistrableDomainInNetworkIsolationKey --disable-features=AppActivityReporting,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,CrashReporting,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,DirectSockets,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,FederatedLearningOfCohorts,FlocIdComputedEventLogging,HandwritingRecognitionWebPlatformApi,HandwritingRecognitionWebPlatformApiFinch,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,LangClientHintHeader,MediaDrmPreprovisioning,NetworkTimeServiceQuerying,NotificationTriggers,PasswordCheck,Reporting,SafeBrowsingEnhancedProtection,SignedExchangeReportingForDistributors,SubresourceWebBundles,TextFragmentAnchor,UserAgentClientHint,WebNFC,WebUSB,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation --connectivity-check-url=0.0.0.0 --crash-server-url=0.0.0.0 --gaia-url=0.0.0.0 --gcm-checkin-url=0.0.0.0 --gcm-mcs-endpoint=0.0.0.0 --gcm-registration-url=0.0.0.0 --google-apis-url=0.0.0.0 --google-base-url=0.0.0.0 --google-doodle-url=0.0.0.0 --lso-url=0.0.0.0 --oauth-account-manager-url=0.0.0.0 --override-metrics-upload-url=0.0.0.0 --realtime-reporting-url=0.0.0.0 --sync-url=0.0.0.0 --variations-server-url=0.0.0.0 --cipher-suite-blacklist=0xc013,0xc014,0x009c,0x009d,0x002f,0x0035 --enable-strict-mixed-content-checking --js-flags=--noexpose_wasm
 ```
 
 Triple click to select the entire line.
@@ -11,7 +11,7 @@ Triple click to select the entire line.
 | Name | Description |
 | :--- | :---------- |
 | --disable-frame-rate-limit | Disables frame rate limiting |
-| --enable-low-end-device-mode | Forces low-end device mode <br> It reduces memory usage a lot and also quaility of videos or images |
+| --enable-low-end-device-mode | Forces low-end device mode <br> Reduces memory usage a lot and also quaility of videos and images |
 | --user-agent="useragent" | A string used to override the default user agent with a custom one |
 | --use-mobile-user-agent | Forces mobile user agent |
 </p></details>
@@ -22,10 +22,10 @@ Triple click to select the entire line.
 | Name | Description |
 | :--- | :---------- |
 | --block-new-web-contents | Blocks all pop-ups |
-| --cipher-suite-blacklist | Blocks lists of insecure cipher suites |
+| --cipher-suite-blacklist | Blocks lists of cipher suites |
 | --disable-background-networking | Blocks background networking, like Safe browsing |
-| --disable-breakpad | Disables the crash reporting. |
-| --disable-crash-reporter | 	Disables the crash reporting. |
+| --disable-breakpad | Disables the crash reporting |
+| --disable-crash-reporter | Disables the crash reporting |
 | --disable-default-apps | Disables installation of default apps |
 | --disable-domain-reliability | Disables Domain Reliability Monitoring |
 | --disable-notifications | Disables notifications |
@@ -37,12 +37,14 @@ Triple click to select the entire line.
 | --no-pings | Blocks hyperlink auditing pings |
 | --site-per-process | Enforces a one-site-per-process security policy |
 | --use-fake-device-for-media-stream | Spoofs microphone and camera IDs |
+| --process-per-site | Consolidates same-site pages to share a single process |
+| --disable-composited-antialiasing | Disables layer-edge anti-aliasing in the compositor |
+| --num-raster-threads | Enforces number of worker threads used to rasterize content |
 </p></details>
 
 <details><summary>Enabled Features</summary><p>
 
 Isolation:
-* AppendFrameOriginToNetworkIsolationKey
 * IsolateOrigins
 * OriginIsolationHeader
 * PartitionConnectionsByNetworkIsolationKey
@@ -68,6 +70,10 @@ Privacy & Security:
 	* Enforce deprecation of legacy TLS versions
 * BlockInsecurePrivateNetworkRequests, BlockInsecurePrivateNetworkRequestsForNavigations
 	* Blocks insecure private network requests
+Performance:
+* AudioWorkletThreadRealtimePriority
+* MinimizeAudioProcessingForUnusedOutput
+	* Reduces CPU load when all audio tracks are disabled
 </p></details>
 
 <details><summary>Disabled Features</summary><p>
@@ -108,6 +114,8 @@ Others:
 	* Disabling it and forcing --enable-strict-mixed-content-checking will block all mixed content
 * DirectSockets
 	* Blocks Direct Sockets API
+* HandwritingRecognitionWebPlatformApi, HandwritingRecognitionWebPlatformApiFinch
+	* HandwritingRecognition API
 * IdleDetection
 	* Blocks Idle Detection
 * LangClientHintHeader

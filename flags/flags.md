@@ -8,15 +8,12 @@ In order to modify flags, you must access `chrome://flags`
 
 * #block-insecure-private-network-requests
 * #clear-cross-browsing-context-group-main-frame-name
-* #cookies-without-same-site-must-be-secure
 * #disallow-doc-written-script-loads
 * #dns-httpssvc
 * #enable-browsing-data-lifetime-manager
-* #enable-heavy-ad-intervention
 * #enable-web-bluetooth-new-permissions-backend
 	* Go to chrome://settings/content/bluetoothDevices and disable the permission
 	* On Android, Go to Settings → Site Settings → Bluetooth → Disable the permission
-* #enable-webrtc-hide-local-ips-with-mdns
 * #force-effective-connection-type - **Slow 2G**
 * #freeze-user-agent
 * #heavy-ad-privacy-mitigations
@@ -29,7 +26,6 @@ In order to modify flags, you must access `chrome://flags`
 * #mixed-forms-interstitial
 * #omnibox-default-typed-navigations-to-https
 * #post-quantum-cecpq2
-* #same-site-by-default-cookies
 * #schemeful-same-site
 * #strict-origin-isolation
 </p></details>
@@ -41,7 +37,6 @@ In order to modify flags, you must access `chrome://flags`
 * #compute-pressure
 * #enable-first-party-sets
 * #enable-generic-sensor-extra-classes
-* #enable-preconnect-to-search
 * #enable-quic
 	* QUIC: See here why you should keep it disabled:
 		> https://www.ghacks.net/2020/07/01/how-to-enable-http-3-support-in-firefox/#comment-4467237
@@ -60,8 +55,7 @@ In order to modify flags, you must access `chrome://flags`
 * #font-access-persistent
 * #form-controls-dark-mode
 * #happiness-tracking-surveys-for-desktop-demo
-* #happiness-tracking-surveys-for-desktop-devtools-issues-cookies-same-site
-* #happiness-tracking-surveys-for-desktop-migration
+* #happiness-tracking-surveys-for-desktop-privacy-sandbox
 * #happiness-tracking-surveys-for-desktop-settings
 * #happiness-tracking-surveys-for-desktop-settings-privacy
 * #hardware-media-key-handling
@@ -75,6 +69,7 @@ In order to modify flags, you must access `chrome://flags`
 * #use-multilogin-endpoint
 * #web-bundles
 * #web-share
+* #webid
 </p></details>
 
 ## Usability
@@ -100,22 +95,15 @@ In order to modify flags, you must access `chrome://flags`
 
 <details><summary>Disabled</summary><p>
 
-* #desktop-in-product-help-snooze
-* #enable-media-feeds
-* #enable-media-feeds-background-fetch
-* #enable-translate-sub-frames
 * #in-product-help-demo-mode-choice
 * #media-router-cast-allow-all-ips
 * #ntp-cache-one-google-bar
-* #omnibox-bubble-url-suggestions
 * #passwords-account-storage
 * #passwords-account-storage-iph
 * #raw-clipboard
-* #sharing-qr-code-generator
 * #smooth-scrolling
 	* Personal preference
 * #sms-receiver-cross-device
-* #tab-hover-cards
 * #username-first-flow
 </p></details>
 
@@ -123,17 +111,13 @@ In order to modify flags, you must access `chrome://flags`
 
 <details><summary>Enabled</summary><p>
 
-* #audio-worklet-realtime-thread
 * #back-forward-cache - **Enabled force caching all pages (experimntal)**
 * #calculate-native-win-occlusion
-* #delay-competing-low-priority-requests
-* #enable-defer-all-script
-* #enable-lazy-frame-loading - **Enabled (Automatically lazily load where safe even if not marked "loading=lazy")**
-* #enable-lazy-image-loading - **Enabled (Automatically lazily load where safe even if not marked "loading=lazy")**
 * #enable-lite-video
 * #enable-parallel-downloading
 * #enable-skia-renderer
 * #enable-webassembly-lazy-compilation
+* #intensive-wake-up-throttling - **Enabled** (10 sec can be used, as well)
 * #lite-video-force-override-decision
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
 * #turn-off-streaming-media-caching-always
@@ -190,9 +174,11 @@ In order to modify flags, you must access `chrome://flags`
 * #brave-adblock-csp-rules - **Enabled**
 * #brave-domain-block - **Enabled**
 * #brave-ephemeral-storage - **Enabled**
+* #brave-ephemeral-storage-keep-alive - **Enabled**
 * #brave-extension-network-blocking - **Enabled**
 * #brave-permission-lifetime - **Enabled**
 * #brave-speedreader - **Enabled**
+* #sidebar - **Enabled**
 </p></details>
 
 <details><summary>Ungoogled Chromium</summary><p>
