@@ -60,6 +60,7 @@ In order to modify flags, you must access `chrome://flags`
 * #happiness-tracking-surveys-for-desktop-settings-privacy
 * #hardware-media-key-handling
 * #load-media-router-component-extension
+* #media-router-cast-allow-all-ips
 * #privacy-sandbox-settings
 * #safe-browsing-real-time-url-lookup-enterprise-ga-endpoint
 * #safety-check-chrome-cleaner-child
@@ -84,8 +85,8 @@ In order to modify flags, you must access `chrome://flags`
 * #global-media-controls-cast-start-stop
 * #global-media-controls-modern-ui
 * #global-media-controls-overlay-controls
-* #global-media-controls-picture-in-picture
 * #global-media-controls-seamless-transfer
+* #page-info-version-2-desktop
 * #privacy-advisor
 * #read-later
 * #scrollable-tabstrip
@@ -96,7 +97,6 @@ In order to modify flags, you must access `chrome://flags`
 <details><summary>Disabled</summary><p>
 
 * #in-product-help-demo-mode-choice
-* #media-router-cast-allow-all-ips
 * #ntp-cache-one-google-bar
 * #passwords-account-storage
 * #passwords-account-storage-iph
@@ -145,15 +145,9 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-instant-start - **Enabled**
 * #enable-site-isolation-for-password-sites - **Enabled**
 * #enable-site-per-process - **Enabled**
-* #enable-tab-groups-ui-improvments - **Enabled**
 * #omnibox-most-visited-tiles - **Enabled**
 * #page-info-discoverability - **Enabled**
 * #page-info-version-2 - **Enabled**
-* #privacy-reordered-android - **Enabled**
-* #tabbed-app-overflow-menu-icons - **Enabled**
-	* If you don't like new icons in menu, you can keep this flag disabled. `#tabbed-app-overflow-menu-regroup` and `#tabbed-app-overflow-menu-three-button-actionbar` won't have any effect.
-* #tabbed-app-overflow-menu-regroup - **Enabled**
-* #tabbed-app-overflow-menu-three-button-actionbar - **Enabled (three button with action chip view)**
 * #omnibox-native-voice-suggestions-provider - **Disabled**
 </p></details>
 

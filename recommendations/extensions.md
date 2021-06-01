@@ -12,7 +12,7 @@ My biggest recommendation is to avoid extensions as much as you can.
 	* Do not use it in Brave Browser
 	* WebGL hashes randomization may not work due to `--disable-webgl`, use `--disable-webgl2` instead. 
 * [Canvas Fingerprint Defender](https://chrome.google.com/webstore/detail/canvas-fingerprint-defend/lanfdkkpgfjfdikkncbnojekcppdebfp) - Defending against canvas fingerprinting by reporting a fake value
-	* Do not use it in Brave Browser
+	* Do not use it in Brave Browser and Ungoogled Chromium
 * [AudioContext Fingerprint Defender](https://chrome.google.com/webstore/detail/audiocontext-fingerprint/pcbjiidheaempljdefbdplebgdgpjcbe) - Defending against AudioContext fingerprinting by reporting a fake value
 	* Do not use it in Brave Browser
 * [Font Fingerprint Defender](https://chrome.google.com/webstore/detail/font-fingerprint-defender/fhkphphbadjkepgfljndicmgdlndmoke) - Defending against Font fingerprinting by reporting a fake value.
