@@ -19,7 +19,8 @@ I am not responsible for any direct or indirect consequences/damage resulting fr
 
 ## Credits
 * [NRK](https://github.com/N-R-K)
-* [Brave team](https://github.com/brave/)
+* [Brave](https://github.com/brave/)
+* [Bromite](https://github.com/bromite/)
 * Λdam#3185
 * CHEF KOCH
 

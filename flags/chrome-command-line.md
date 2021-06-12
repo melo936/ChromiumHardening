@@ -1,7 +1,7 @@
 ## Command Line
 
 ```
---block-new-web-contents --disable-background-networking --disable-breakpad --disable-composited-antialiasing --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-notifications --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --no-pings --num-raster-threads=4 --process-per-site --site-per-process --use-fake-device-for-media-stream --enable-features=AudioWorkletThreadRealtimePriority,BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,ImprovedCookieControlsIsolateOrigins,LegacyTLSEnforced,MinimizeAudioProcessingForUnusedOutput,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PrefetchPrivacyChanges,ReducedReferrerGranularity,SplitAuthCacheByNetworkIsolationKey,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,UseRegistrableDomainInNetworkIsolationKey,WebAppEnableIsolatedStorage --disable-features=AppActivityReporting,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,ConversionMeasurement,CrashReporting,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,DirectSockets,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,FederatedLearningOfCohorts,FlocIdComputedEventLogging,HandwritingRecognitionWebPlatformApi,HandwritingRecognitionWebPlatformApiFinch,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,LangClientHintHeader,MediaDrmPreprovisioning,NetworkTimeServiceQuerying,NotificationTriggers,PasswordCheck,Reporting,SafeBrowsingEnhancedProtection,SignedExchangeReportingForDistributors,SubresourceWebBundles,TextFragmentAnchor,UserAgentClientHint,WebNFC,WebUSB,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation --connectivity-check-url=0.0.0.0 --crash-server-url=0.0.0.0 --gaia-url=0.0.0.0 --gcm-checkin-url=0.0.0.0 --gcm-mcs-endpoint=0.0.0.0 --gcm-registration-url=0.0.0.0 --google-apis-url=0.0.0.0 --google-base-url=0.0.0.0 --google-doodle-url=0.0.0.0 --lso-url=0.0.0.0 --oauth-account-manager-url=0.0.0.0 --override-metrics-upload-url=0.0.0.0 --realtime-reporting-url=0.0.0.0 --sync-url=0.0.0.0 --variations-server-url=0.0.0.0 --cipher-suite-blacklist=0xc013,0xc014,0x009c,0x009d,0x002f,0x0035 --enable-strict-mixed-content-checking --js-flags=--noexpose_wasm
+--block-new-web-contents --disable-background-networking --disable-breakpad --disable-composited-antialiasing --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-external-intent-requests --disable-notifications --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --no-pings --num-raster-threads=4 --process-per-site --site-per-process --use-fake-device-for-media-stream --enable-features=AudioWorkletThreadRealtimePriority,BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,ImprovedCookieControlsIsolateOrigins,LegacyTLSEnforced,MinimizeAudioProcessingForUnusedOutput,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PrefetchPrivacyChanges,ReducedReferrerGranularity,SplitAuthCacheByNetworkIsolationKey,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,UseRegistrableDomainInNetworkIsolationKey,WebAppEnableIsolatedStorage --disable-features=AppActivityReporting,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,ConversionMeasurement,CrashReporting,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,DirectSockets,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,FederatedLearningOfCohorts,FlocIdComputedEventLogging,HandwritingRecognitionWebPlatformApi,HandwritingRecognitionWebPlatformApiFinch,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,LangClientHintHeader,MediaDrmPreprovisioning,NetworkTimeServiceQuerying,NotificationTriggers,PasswordCheck,Reporting,SafeBrowsingEnhancedProtection,SignedExchangeReportingForDistributors,SubresourceWebBundles,TabMetricsLogging,TextFragmentAnchor,UserAgentClientHint,WebNFC,WebUSB,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation --connectivity-check-url=0.0.0.0 --crash-server-url=0.0.0.0 --gaia-url=0.0.0.0 --gcm-checkin-url=0.0.0.0 --gcm-mcs-endpoint=0.0.0.0 --gcm-registration-url=0.0.0.0 --google-apis-url=0.0.0.0 --google-base-url=0.0.0.0 --google-doodle-url=0.0.0.0 --lso-url=0.0.0.0 --oauth-account-manager-url=0.0.0.0 --override-metrics-upload-url=0.0.0.0 --realtime-reporting-url=0.0.0.0 --sync-url=0.0.0.0 --variations-server-url=0.0.0.0 --cipher-suite-blacklist=0xc013,0xc014,0x009c,0x009d,0x002f,0x0035 --enable-strict-mixed-content-checking --js-flags=--noexpose_wasm
 ```
 
 Triple click to select the entire line.
@@ -25,9 +25,11 @@ Triple click to select the entire line.
 | --cipher-suite-blacklist | Blocks lists of cipher suites |
 | --disable-background-networking | Blocks background networking, like Safe browsing |
 | --disable-breakpad | Disables the crash reporting |
+| --disable-composited-antialiasing | Disables layer-edge anti-aliasing in the compositor |
 | --disable-crash-reporter | Disables the crash reporting |
 | --disable-default-apps | Disables installation of default apps |
 | --disable-domain-reliability | Disables Domain Reliability Monitoring |
+| --disable-external-intent-requests | Never forward URL requests to external intents |
 | --disable-notifications | Disables notifications |
 | --disable-webgl | Disables WebGL |
 | --enable-strict-mixed-content-checking | Blocks passive and active mixed content <br> (AutoupgradeMixedContent must be disabled) |
@@ -35,11 +37,10 @@ Triple click to select the entire line.
 | --extensions-install-verification | Extensions verification |
 | --js-flags=--noexpose_wasm | Disables WebAssembly |
 | --no-pings | Blocks hyperlink auditing pings |
+| --num-raster-threads | Enforces number of worker threads used to rasterize content |
+| --process-per-site | Consolidates same-site pages to share a single process |
 | --site-per-process | Enforces a one-site-per-process security policy |
 | --use-fake-device-for-media-stream | Spoofs microphone and camera IDs |
-| --process-per-site | Consolidates same-site pages to share a single process |
-| --disable-composited-antialiasing | Disables layer-edge anti-aliasing in the compositor |
-| --num-raster-threads | Enforces number of worker threads used to rasterize content |
 </p></details>
 
 <details><summary>Enabled Features</summary><p>
@@ -94,6 +95,7 @@ Reporting:
 * ExpectCTReporting
 * Reporting
 * SignedExchangeReportingForDistributors
+* TabMetricsLogging
 
 Autofill:
 * AutofillEnableAccountWalletStorage
