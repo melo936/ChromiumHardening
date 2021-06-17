@@ -116,6 +116,8 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-lite-video
 * #enable-parallel-downloading
 * #enable-skia-renderer
+* #enable-vulkan - Disabled, due to causing completely black web pages and making browser laggy
+	* This flag is enabled by default on some/most devices
 * #enable-webassembly-lazy-compilation
 * #intensive-wake-up-throttling - **Enabled** (10 sec can be used, as well)
 * #lite-video-force-override-decision
