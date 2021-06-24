@@ -1,7 +1,7 @@
 ## Command Line
 
 ```
---block-new-web-contents --disable-background-networking --disable-breakpad --disable-composited-antialiasing --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-external-intent-requests --disable-notifications --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --no-pings --num-raster-threads=4 --process-per-site --site-per-process --use-fake-device-for-media-stream --enable-features=AudioWorkletThreadRealtimePriority,BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,ImprovedCookieControlsIsolateOrigins,LegacyTLSEnforced,MinimizeAudioProcessingForUnusedOutput,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PrefetchPrivacyChanges,ReducedReferrerGranularity,SplitAuthCacheByNetworkIsolationKey,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,UseRegistrableDomainInNetworkIsolationKey,WebAppEnableIsolatedStorage --disable-features=AppActivityReporting,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,ConversionMeasurement,CrashReporting,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,DirectSockets,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,FederatedLearningOfCohorts,FlocIdComputedEventLogging,HandwritingRecognitionWebPlatformApi,HandwritingRecognitionWebPlatformApiFinch,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,LangClientHintHeader,MediaDrmPreprovisioning,NetworkTimeServiceQuerying,NotificationTriggers,PasswordCheck,Reporting,SafeBrowsingEnhancedProtection,SignedExchangeReportingForDistributors,SubresourceWebBundles,TabMetricsLogging,TextFragmentAnchor,UserAgentClientHint,WebNFC,WebUSB,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation --connectivity-check-url=0.0.0.0 --crash-server-url=0.0.0.0 --gaia-url=0.0.0.0 --gcm-checkin-url=0.0.0.0 --gcm-mcs-endpoint=0.0.0.0 --gcm-registration-url=0.0.0.0 --google-apis-url=0.0.0.0 --google-base-url=0.0.0.0 --google-doodle-url=0.0.0.0 --lso-url=0.0.0.0 --oauth-account-manager-url=0.0.0.0 --override-metrics-upload-url=0.0.0.0 --realtime-reporting-url=0.0.0.0 --sync-url=0.0.0.0 --variations-server-url=0.0.0.0 --cipher-suite-blacklist=0xc013,0xc014,0x009c,0x009d,0x002f,0x0035 --enable-strict-mixed-content-checking --js-flags=--noexpose_wasm
+--blink-settings=preferredColorScheme=1,strictMixedContentChecking=true,strictMixedContentCheckingForPlugin=true,strictlyBlockBlockableMixedContent=true --block-new-web-contents --disable-background-networking --disable-breakpad --disable-composited-antialiasing --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-external-intent-requests --disable-notifications --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --no-pings --num-raster-threads=4 --process-per-site --site-per-process --use-fake-device-for-media-stream --enable-features=AudioWorkletThreadRealtimePriority,BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,EnableCsrssLockdown,GpuAppContainer,ImprovedCookieControlsIsolateOrigins,LegacyTLSEnforced,MinimizeAudioProcessingForUnusedOutput,NetworkServiceSandbox,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PrefetchPrivacyChanges,ReducedReferrerGranularity,RendererAppContainer,SplitAuthCacheByNetworkIsolationKey,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,UseRegistrableDomainInNetworkIsolationKey,WebAppEnableIsolatedStorage --disable-features=AppActivityReporting,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,ConversionMeasurement,CrashReporting,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,DirectSockets,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableStructuredMetrics,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,FederatedLearningOfCohorts,FlocIdComputedEventLogging,HandwritingRecognitionWebPlatformApi,HandwritingRecognitionWebPlatformApiFinch,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,LangClientHintHeader,MediaDrmPreprovisioning,NetworkTimeServiceQuerying,NotificationTriggers,PasswordCheck,Reporting,SafeBrowsingEnhancedProtection,SignedExchangeReportingForDistributors,SubresourceWebBundles,TabMetricsLogging,TextFragmentAnchor,UserAgentClientHint,WebNFC,WebUSB,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation --connectivity-check-url=0.0.0.0 --crash-server-url=0.0.0.0 --gaia-url=0.0.0.0 --gcm-checkin-url=0.0.0.0 --gcm-mcs-endpoint=0.0.0.0 --gcm-registration-url=0.0.0.0 --google-apis-url=0.0.0.0 --google-base-url=0.0.0.0 --google-doodle-url=0.0.0.0 --lso-url=0.0.0.0 --oauth-account-manager-url=0.0.0.0 --override-metrics-upload-url=0.0.0.0 --realtime-reporting-url=0.0.0.0 --sync-url=0.0.0.0 --url=0.0.0.0 --variations-server-url=0.0.0.0 --cipher-suite-blacklist=0xc013,0xc014,0x009c,0x009d,0x002f,0x0035 --enable-strict-mixed-content-checking --js-flags=--noexpose_wasm
 ```
 
 Triple click to select the entire line.
@@ -62,6 +62,12 @@ Isolation:
 * WebAppEnableIsolatedStorage
 	* Enables web apps to request isolated storage
 	
+Sandboxing:
+* EnableCsrssLockdown
+* GpuAppContainer
+* NetworkServiceSandbox
+* RendererAppContainer
+
 Privacy & Security:
 * PrefetchPrivacyChanges 
 	* Prefetch requests will not follow redirects, not send a Referer header, not send credentials for cross-origin requests, and do not pass through service workers
@@ -90,6 +96,7 @@ Reporting:
 * CrossOriginOpenerPolicyReporting
 * CrossOriginOpenerPolicyReportingOriginTrial
 * CrostiniAdditionalEnterpriseReporting
+* EnableStructuredMetrics
 * EnterpriseRealtimeExtensionRequest
 * EventBasedStatusReporting
 * ExpectCTReporting
@@ -165,8 +172,22 @@ Others:
 | --override-metrics-upload-url | Metrics upload |
 | --realtime-reporting-url | Realtime reporting |
 | --sync-url | Used for sync |
+| --url | Send crash reports |
 | --variations-server-url | Reports variation data |
 </p></details>
+
+<details><summary>Blink</summary><p>
+
+| Name | Description |
+| :--- | :---------- |
+| --blink-settings | Sets blink settings |
+
+* preferredColorScheme = 1
+	* Prevents Dark Mode detection
+* strictMixedContentChecking, strictMixedContentCheckingForPlugin, strictlyBlockBlockableMixedContent = true
+	* Strictly blocks mixed contents
+</p></details>
+
 
 ## Workaround
 
