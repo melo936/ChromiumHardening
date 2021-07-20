@@ -7,10 +7,11 @@ In order to modify flags, you must access `chrome://flags`
 <details><summary>Enabled:</summary><p>
 
 * #block-insecure-private-network-requests
-* #clear-cross-browsing-context-group-main-frame-name
+* #clear-cross-site-cross-browsing-context-group-window-name
 * #disallow-doc-written-script-loads
 * #dns-httpssvc
-* #enable-browsing-data-lifetime-manager
+	* Make sure you are using a secure DNS
+* #enable-removing-all-third-party-cookies
 * #enable-web-bluetooth-new-permissions-backend
 	* Go to chrome://settings/content/bluetoothDevices and disable the permission
 	* On Android, Go to Settings → Site Settings → Bluetooth → Disable the permission
@@ -26,6 +27,7 @@ In order to modify flags, you must access `chrome://flags`
 * #mixed-forms-interstitial
 * #omnibox-default-typed-navigations-to-https
 * #post-quantum-cecpq2
+* #restrict-gamepad-access
 * #schemeful-same-site
 * #strict-origin-isolation
 </p></details>
@@ -34,19 +36,14 @@ In order to modify flags, you must access `chrome://flags`
 
 * #allow-sync-xhr-in-page-dismissal
 * #cast-media-route-provider
-* #compute-pressure
 * #enable-first-party-sets
 * #enable-generic-sensor-extra-classes
 * #enable-quic
-	* QUIC: See here why you should keep it disabled:
-		> https://www.ghacks.net/2020/07/01/how-to-enable-http-3-support-in-firefox/#comment-4467237
-		> https://www.reddit.com/r/uBlockOrigin/comments/66k0eh/psa_disable_quic_in_your_chromiumbased_browser/
-		> https://brave.com/quic-in-the-wild/
-		> https://www.fastvue.co/fastvue/blog/googles-quic-protocols-security-and-reporting-implications/
-	* If you really have a slow internet and you prefer speed over security, keep it Enabled.
+	* QUIC used to cause blockers to be bypassed. Fortunately, it is fixed now and we can use it. However, it causes preconnections which might be privacy implication, but disabling DNS prefetching should fix the problem.
 * #enable-sxg-prefetch-cache-for-navigations
 * #enable-sxg-subresource-prefetching
 * #enable-webrtc-remote-event-log
+* #enable-windows-gaming-input-data-fetcher
 * #enable-winrt-geolocation-implementation
 	* You might need to enable it for Maps
 * #enterprise-realtime-extension-request
@@ -61,13 +58,15 @@ In order to modify flags, you must access `chrome://flags`
 * #hardware-media-key-handling
 * #load-media-router-component-extension
 * #media-router-cast-allow-all-ips
+* #ntp-cache-one-google-bar
+* #passwords-account-storage
+* #passwords-account-storage-iph
 * #privacy-sandbox-settings
-* #safe-browsing-real-time-url-lookup-enterprise-ga-endpoint
+* #raw-clipboard
 * #safety-check-chrome-cleaner-child
 * #show-autofill-type-predictions
 * #trust-tokens
 * #use-first-party-set
-* #use-multilogin-endpoint
 * #web-bundles
 * #web-share
 * #webid
@@ -95,12 +94,9 @@ In order to modify flags, you must access `chrome://flags`
 </p></details>
 
 <details><summary>Disabled</summary><p>
-
+* #detect-target-embedding-lookalikes
+* #enable-translate-sub-frames
 * #in-product-help-demo-mode-choice
-* #ntp-cache-one-google-bar
-* #passwords-account-storage
-* #passwords-account-storage-iph
-* #raw-clipboard
 * #smooth-scrolling
 	* Personal preference
 * #sms-receiver-cross-device
@@ -116,19 +112,21 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-lite-video
 * #enable-parallel-downloading
 * #enable-skia-renderer
+* #enable-throttle-display-none-and-visibility-hidden-cross-origin-iframes
 * #enable-vulkan - Disabled, due to causing completely black web pages and making browser laggy
 	* This flag is enabled by default on some/most devices
 * #enable-webassembly-lazy-compilation
-* #intensive-wake-up-throttling - **Enabled** (10 sec can be used, as well)
+* #intensive-wake-up-throttling - **Enabled**
+	* Enabled 10 seconds after a tab is hidden should improve battery life. However, you might have issues on some websites, like Mega.nz
 * #lite-video-force-override-decision
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
-* #turn-off-streaming-media-caching-always
-* #turn-off-streaming-media-caching-on-battery
 
 **These flags are not intented for every device, but worth testing**
+Forcing them might be a bad idea.
+
 * #enable-accelerated-video-decode
 	* Enabled by default on Windows (probably on MacOS, too), yet not on Linux.
-	* Use ``chrome://media-iternals`` to verify if you are actually getting hardware accelerated video decoding or not. [Read more](https://old.reddit.com/r/linux/comments/k5s4n5/google_chrome_v88_got_hardwareaccelerated/gehwpak/)
+	* Use ``chrome://media-iternals`` to verify if you are actually getting hardware accelerated video decoding or not. [Read more](https://teddit.net/r/linux/comments/k5s4n5/google_chrome_v88_got_hardwareaccelerated/gehwpak/)
 * #enable-gpu-rasterization
 * #enable-zero-copy
 * #ignore-gpu-blocklist
@@ -149,15 +147,12 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-site-per-process - **Enabled**
 * #omnibox-most-visited-tiles - **Enabled**
 * #page-info-discoverability - **Enabled**
-* #page-info-version-2 - **Enabled**
-* #omnibox-native-voice-suggestions-provider - **Disabled**
 </p></details>
 
 <details><summary>Disabled</summary><p>
 
 * #contextual-search-longpress-resolve - **Disabled**
 * #related-searches - **Disabled**
-* #toolbar-iph-android - **Disabled**
 * #xsurface-metrics-reporting - **Disabled**
 </p></details>
 
@@ -165,6 +160,8 @@ In order to modify flags, you must access `chrome://flags`
 
 <details><summary>Brave Browser</summary><p>
 
+* #brave-adblock-cname-uncloaking - **Enabled**
+	* Keep it disabled on MacOS
 * #brave-adblock-cosmetic-filtering - **Enabled**
 * #brave-adblock-cosmetic-filtering-native - **Enabled**
 * #brave-adblock-csp-rules - **Enabled**
@@ -175,6 +172,7 @@ In order to modify flags, you must access `chrome://flags`
 * #brave-permission-lifetime - **Enabled**
 * #brave-speedreader - **Enabled**
 * #sidebar - **Enabled**
+
 </p></details>
 
 <details><summary>Ungoogled Chromium</summary><p>
