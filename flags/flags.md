@@ -84,7 +84,6 @@ In order to modify flags, you must access `chrome://flags`
 * #global-media-controls-cast-start-stop
 * #global-media-controls-modern-ui
 * #global-media-controls-overlay-controls
-* #global-media-controls-seamless-transfer
 * #page-info-version-2-desktop
 * #privacy-advisor
 * #read-later
