@@ -222,6 +222,10 @@ Using JITless mode might reduce V8’s performance [More Information](https://v8
 
 Remove `--jitless` from `--js-flags`
 
+### Mega.nz
+
+Remove `0x002f` from `--cipher-suite-blacklist`
+
 ## Not recommended
 
 > --component-updater=url-source=0.0.0.0

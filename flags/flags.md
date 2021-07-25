@@ -93,6 +93,7 @@ In order to modify flags, you must access `chrome://flags`
 </p></details>
 
 <details><summary>Disabled</summary><p>
+
 * #detect-target-embedding-lookalikes
 * #enable-translate-sub-frames
 * #in-product-help-demo-mode-choice
@@ -114,13 +115,14 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-throttle-display-none-and-visibility-hidden-cross-origin-iframes
 * #enable-vulkan - Disabled, due to causing completely black web pages and making browser laggy
 	* This flag is enabled by default on some/most devices
+	* If you don't experience same problem, keep this flag default
 * #enable-webassembly-lazy-compilation
 * #intensive-wake-up-throttling - **Enabled**
-	* Enabled 10 seconds after a tab is hidden should improve battery life. However, you might have issues on some websites, like Mega.nz
+	* Enabled 10 seconds after a tab is hidden should improve battery life. However, you might have issues on some websites, like Mega.nz or Spotify (testing is required)
 * #lite-video-force-override-decision
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
 
-**These flags are not intented for every device, but worth testing**
+**These flags are not intented for every device, but worth testing.**
 Forcing them might be a bad idea.
 
 * #enable-accelerated-video-decode
