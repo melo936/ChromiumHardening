@@ -29,6 +29,7 @@ In order to modify flags, you must access `chrome://flags`
 * #post-quantum-cecpq2
 * #restrict-gamepad-access
 * #schemeful-same-site
+* #strict-extension-isolation
 * #strict-origin-isolation
 </p></details>
 
