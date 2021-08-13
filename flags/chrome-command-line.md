@@ -1,7 +1,7 @@
 ## Command Line
 
 ```
---blink-settings=dnsPrefetchingEnabled=false,preferredColorScheme=1,strictMixedContentChecking=true,strictMixedContentCheckingForPlugin=true,strictlyBlockBlockableMixedContent=true --block-new-web-contents --disable-background-networking --disable-breakpad --disable-composited-antialiasing --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-external-intent-requests --disable-notifications --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --no-pings --num-raster-threads=4 --process-per-site --site-per-process --use-fake-device-for-media-stream --enable-features=AudioWorkletThreadRealtimePriority,BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,EnableCsrssLockdown,GpuAppContainer,ImprovedCookieControlsIsolateOrigins,LegacyTLSEnforced,MinimizeAudioProcessingForUnusedOutput,NetworkServiceSandbox,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PrefersColorSchemeClientHintHeader,PrefetchPrivacyChanges,ReducedReferrerGranularity,RendererAppContainer,SplitAuthCacheByNetworkIsolationKey,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,UseRegistrableDomainInNetworkIsolationKey,WebAppEnableIsolatedStorage --disable-features=AppActivityReporting,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,ComputePressure,ConversionMeasurement,CrashReporting,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,DirectSockets,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableStructuredMetrics,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,FederatedLearningOfCohorts,FlocIdComputedEventLogging,GreaseUACH,HandwritingRecognitionWebPlatformApi,HandwritingRecognitionWebPlatformApiFinch,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,LangClientHintHeader,MediaDrmPreprovisioning,NetworkTimeServiceQuerying,NotificationTriggers,PasswordCheck,Reporting,SafeBrowsingEnhancedProtection,SignedExchangeReportingForDistributors,SubresourceWebBundles,TabMetricsLogging,TextFragmentAnchor,UserAgentClientHint,WebNFC,WebUSB,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation --connectivity-check-url=0.0.0.0 --crash-server-url=0.0.0.0 --gaia-url=0.0.0.0 --gcm-checkin-url=0.0.0.0 --gcm-mcs-endpoint=0.0.0.0 --gcm-registration-url=0.0.0.0 --google-apis-url=0.0.0.0 --google-base-url=0.0.0.0 --google-doodle-url=0.0.0.0 --lso-url=0.0.0.0 --oauth-account-manager-url=0.0.0.0 --override-metrics-upload-url=0.0.0.0 --realtime-reporting-url=0.0.0.0 --sync-url=0.0.0.0 --url=0.0.0.0 --variations-server-url=0.0.0.0 --cipher-suite-blacklist=0xc013,0xc014,0x009c,0x009d,0x002f,0x0035 --enable-strict-mixed-content-checking --js-flags="--jitless --noexpose_wasm"
+--blink-settings="dnsPrefetchingEnabled=false,preferredColorScheme=1,strictMixedContentChecking=true,strictMixedContentCheckingForPlugin=true,strictlyBlockBlockableMixedContent=true" --block-new-web-contents --disable-background-networking --disable-breakpad --disable-composited-antialiasing --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-external-intent-requests --disable-notifications --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --gpu-rasterization-msaa-sample-count=0 --no-pings --num-raster-threads=4 --process-per-site --site-per-process --use-fake-device-for-media-stream --enable-features=AudioWorkletThreadRealtimePriority,BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,BrowserDynamicCodeDisabled,EnableCsrssLockdown,GpuAppContainer,ImprovedCookieControlsIsolateOrigins,LegacyTLSEnforced,MinimizeAudioProcessingForUnusedOutput,NetworkServiceCodeIntegrity,NetworkServiceSandbox,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PrefersColorSchemeClientHintHeader,PrefetchPrivacyChanges,ReducedReferrerGranularity,RendererAppContainer,SplitAuthCacheByNetworkIsolationKey,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,UseRegistrableDomainInNetworkIsolationKey,WebAppEnableIsolatedStorage --disable-features=AppActivityReporting,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,ComputePressure,ConversionMeasurement,CrashReporting,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,DirectSockets,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableStructuredMetrics,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,FederatedLearningOfCohorts,FlocIdComputedEventLogging,GreaseUACH,HandwritingRecognitionWebPlatformApi,HandwritingRecognitionWebPlatformApiFinch,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,LangClientHintHeader,MediaDrmPreprovisioning,NetworkTimeServiceQuerying,NotificationTriggers,PasswordCheck,Reporting,SafeBrowsingEnhancedProtection,SignedExchangeReportingForDistributors,SubresourceWebBundles,TabMetricsLogging,TextFragmentAnchor,UserAgentClientHint,WebNFC,WebUSB,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation --connectivity-check-url=0.0.0.0 --crash-server-url=0.0.0.0 --gaia-url=0.0.0.0 --gcm-checkin-url=0.0.0.0 --gcm-mcs-endpoint=0.0.0.0 --gcm-registration-url=0.0.0.0 --google-apis-url=0.0.0.0 --google-base-url=0.0.0.0 --google-doodle-url=0.0.0.0 --lso-url=0.0.0.0 --oauth-account-manager-url=0.0.0.0 --override-metrics-upload-url=0.0.0.0 --realtime-reporting-url=0.0.0.0 --sync-url=0.0.0.0 --url=0.0.0.0 --variations-server-url=0.0.0.0 --cipher-suite-blacklist=0xc013,0xc014,0x009c,0x009d,0x002f,0x0035 --enable-strict-mixed-content-checking --js-flags="--jitless --noexpose_wasm"
 ```
 
 Triple click to select the entire line.
@@ -35,6 +35,7 @@ Triple click to select the entire line.
 | --enable-strict-mixed-content-checking | Blocks passive and active mixed content <br> (AutoupgradeMixedContent must be disabled) |
 | --extension-content-verification | Extensions verification |
 | --extensions-install-verification | Extensions verification |
+| --gpu-rasterization-msaa-sample-count | Numbers of multisample antialiasing samples for GPU rasterization <br> are based on DPI for desktops <br> For Android it's 4. 0 disables MSAA which helps to improve performance |
 | --js-flags=--jitless | Enables running V8 in JITless mode. [More Information](https://v8.dev/blog/jitless) |
 | --js-flags=--noexpose_wasm | Disables WebAssembly |
 | --no-pings | Blocks hyperlink auditing pings |
@@ -64,8 +65,12 @@ Isolation:
 	* Enables web apps to request isolated storage
 	
 Sandboxing:
+* BrowserDynamicCodeDisabled
+	* Disables dynamic code using ACG. Prevents the browser process from generating dynamic code or modifying executable code.
 * EnableCsrssLockdown
 * GpuAppContainer
+* NetworkServiceCodeIntegrity
+	* Enables CIG in the network process
 * NetworkServiceSandbox
 * RendererAppContainer
 
@@ -177,7 +182,7 @@ Others:
 | --override-metrics-upload-url | Metrics upload |
 | --realtime-reporting-url | Realtime reporting |
 | --sync-url | Used for sync |
-| --url | Send crash reports |
+| --url | Used for crash reports |
 | --variations-server-url | Reports variation data |
 </p></details>
 
@@ -190,7 +195,7 @@ Others:
 * dnsPrefetchingEnabled = false
 	* Disables DNS prefetching
 * preferredColorScheme = 1
-	* Prevents Dark Mode detection
+	* Prevents Dark Mode detection if `#disallow-doc-written-script-loads` is disabled/default
 * strictMixedContentChecking, strictMixedContentCheckingForPlugin, strictlyBlockBlockableMixedContent = true
 	* Strictly blocks mixed contents
 </p></details>

@@ -9,8 +9,10 @@ In order to modify flags, you must access `chrome://flags`
 * #block-insecure-private-network-requests
 * #clear-cross-site-cross-browsing-context-group-window-name
 * #disallow-doc-written-script-loads
+	* Enabling it breaks `--blink-settings="preferredColorScheme=1"`
+	* If you use Brave Browser with Fingerprinting blocking Strict, just enable the flag
 * #dns-httpssvc
-	* Make sure you are using a secure DNS
+	* Make sure you are using a secure DNS. If not, ignore it
 * #enable-removing-all-third-party-cookies
 * #enable-web-bluetooth-new-permissions-backend
 	* Go to chrome://settings/content/bluetoothDevices and disable the permission
@@ -39,8 +41,6 @@ In order to modify flags, you must access `chrome://flags`
 * #cast-media-route-provider
 * #enable-first-party-sets
 * #enable-generic-sensor-extra-classes
-* #enable-quic
-	* QUIC used to cause blockers to be bypassed. Fortunately, it is fixed now and we can use it. However, it causes preconnections which might be privacy implication, but disabling DNS prefetching should fix the problem.
 * #enable-sxg-prefetch-cache-for-navigations
 * #enable-sxg-subresource-prefetching
 * #enable-webrtc-remote-event-log
@@ -109,9 +109,11 @@ In order to modify flags, you must access `chrome://flags`
 <details><summary>Enabled</summary><p>
 
 * #back-forward-cache - **Enabled force caching all pages (experimntal)**
+	* Make sure you are using `#http-cache-partitioning` and command line flags
 * #calculate-native-win-occlusion
 * #enable-lite-video
 * #enable-parallel-downloading
+* #enable-quic
 * #enable-skia-renderer
 * #enable-throttle-display-none-and-visibility-hidden-cross-origin-iframes
 * #enable-vulkan - Disabled, due to causing completely black web pages and making browser laggy
@@ -122,9 +124,11 @@ In order to modify flags, you must access `chrome://flags`
 	* Enabled 10 seconds after a tab is hidden should improve battery life. However, you might have issues on some websites, like Mega.nz or Spotify (testing is required)
 * #lite-video-force-override-decision
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
+	* Use this flag for Skylake or newer
 
 **These flags are not intented for every device, but worth testing.**
-Forcing them might be a bad idea.
+
+Forcing them might be a bad idea. Therefore, before using them, please check out Problems section by typing `chrome://gpu` into the address bar (ignore WebGL errors)
 
 * #enable-accelerated-video-decode
 	* Enabled by default on Windows (probably on MacOS, too), yet not on Linux.
