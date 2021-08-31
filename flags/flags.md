@@ -6,8 +6,12 @@ In order to modify flags, you must access `chrome://flags`
 
 <details><summary>Enabled:</summary><p>
 
+
+
+
 * #block-insecure-private-network-requests
 * #clear-cross-site-cross-browsing-context-group-window-name
+* #cross-origin-embedder-policy-credentialless
 * #disallow-doc-written-script-loads
 	* Enabling it breaks `--blink-settings="preferredColorScheme=1"`
 	* If you use Brave Browser with Fingerprinting blocking Strict, just enable the flag
@@ -18,19 +22,15 @@ In order to modify flags, you must access `chrome://flags`
 	* Go to chrome://settings/content/bluetoothDevices and disable the permission
 	* On Android, Go to Settings → Site Settings → Bluetooth → Disable the permission
 * #force-effective-connection-type - **Slow 2G**
-* #freeze-user-agent
 * #heavy-ad-privacy-mitigations
 * #http-cache-partitioning
 * #isolate-origins
 * #isolation-by-default
 	* Breaks captchas and DevTools
-* #legacy-tls-enforced
-* #mixed-forms-disable-autofill
-* #mixed-forms-interstitial
 * #omnibox-default-typed-navigations-to-https
 * #post-quantum-cecpq2
+* #reduce-user-agent
 * #restrict-gamepad-access
-* #schemeful-same-site
 * #strict-extension-isolation
 * #strict-origin-isolation
 </p></details>
@@ -41,30 +41,22 @@ In order to modify flags, you must access `chrome://flags`
 * #cast-media-route-provider
 * #enable-first-party-sets
 * #enable-generic-sensor-extra-classes
-* #enable-sxg-prefetch-cache-for-navigations
-* #enable-sxg-subresource-prefetching
 * #enable-webrtc-remote-event-log
-* #enable-windows-gaming-input-data-fetcher
 * #enable-winrt-geolocation-implementation
 	* You might need to enable it for Maps
 * #enterprise-realtime-extension-request
 * #file-handling-api
 * #font-access
 * #font-access-persistent
-* #form-controls-dark-mode
 * #happiness-tracking-surveys-for-desktop-demo
 * #happiness-tracking-surveys-for-desktop-privacy-sandbox
 * #happiness-tracking-surveys-for-desktop-settings
 * #happiness-tracking-surveys-for-desktop-settings-privacy
 * #hardware-media-key-handling
-* #load-media-router-component-extension
 * #media-router-cast-allow-all-ips
-* #ntp-cache-one-google-bar
-* #passwords-account-storage
-* #passwords-account-storage-iph
-* #privacy-sandbox-settings
 * #raw-clipboard
 * #safety-check-chrome-cleaner-child
+* #sameparty-cookies-considered-first-party
 * #show-autofill-type-predictions
 * #trust-tokens
 * #use-first-party-set
@@ -80,9 +72,7 @@ In order to modify flags, you must access `chrome://flags`
 * #content-settings-redesign
 * #enable-force-dark
 	* Personal preference
-* #enable-new-profile-picker
 * #enable-reader-mode
-* #global-media-controls-cast-start-stop
 * #global-media-controls-modern-ui
 * #global-media-controls-overlay-controls
 * #page-info-version-2-desktop
@@ -91,6 +81,7 @@ In order to modify flags, you must access `chrome://flags`
 * #scrollable-tabstrip
 * #tab-groups-auto-create
 * #tab-groups-collapse
+* #webui-branding-update
 </p></details>
 
 <details><summary>Disabled</summary><p>
@@ -102,6 +93,7 @@ In order to modify flags, you must access `chrome://flags`
 	* Personal preference
 * #sms-receiver-cross-device
 * #username-first-flow
+* #username-first-flow-filling
 </p></details>
 
 ## Performance
@@ -171,12 +163,14 @@ Forcing them might be a bad idea. Therefore, before using them, please check out
 * #brave-adblock-cosmetic-filtering - **Enabled**
 * #brave-adblock-cosmetic-filtering-native - **Enabled**
 * #brave-adblock-csp-rules - **Enabled**
+* #brave-adblock-default-1p-blocking - **Enabled**
+* #brave-dark-mode-block - **Enabled**
 * #brave-domain-block - **Enabled**
 * #brave-ephemeral-storage - **Enabled**
 * #brave-ephemeral-storage-keep-alive - **Enabled**
 * #brave-extension-network-blocking - **Enabled**
-* #brave-permission-lifetime - **Enabled**
 * #brave-speedreader - **Enabled**
+* #brave-talk - **Enabled**
 * #sidebar - **Enabled**
 
 </p></details>
