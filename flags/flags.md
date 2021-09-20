@@ -186,6 +186,29 @@ Forcing them might be a bad idea. Therefore, before using them, please check out
 <details><summary>Bromite</summary><p>
 
 * #disable-webgl - Disabled
-	* It should be enabled to actually disable WebGL, but it's a bug in Bromite.
+	* It should say "Enabled" to actually disable WebGL, but it's a typo.
 * #num-raster-threads - 4
+</p></details>
+
+<details><summary>Edge Chromium</summary><p>
+
+* #edge-automatic-https - **Enabled**
+* #edge-autoplay-user-setting-block-option - **Enabled**
+* #edge-enable-super-duper-secure-mode - **Enabled**
+	* A new security feature by Microsoft. The flag disables JIT and WebAssembly (we also do it via command line flags) and enables ACG, CFG and CET mitigations
+* #edge-experimental-tracking-prevention-features - **Enabled**
+* #edge-log-textfield-lag - **Disabled**
+* #edge-math-solver - **Disabled**
+* #edge-media-autoplay-limit-default - **Enabled**
+* #edge-on-demand-media-router - **Disabled**
+	* Needed for Cast
+* #edge-playready-drm-win10 - **Disabled**
+	* Needed for Netflix, Spotify, etc.
+* #edge-robin - **Enabled**
+* #edge-show-feature-recommendations - **Disabled**
+* #edge-toast-winrt - **Disabled**
+* #edge-wdag-traffic-identification - **Disabled**
+	* Enabled might improve security, yet it might be used for fingerprinting, due to sending the `X-MS-ApplicationGuard-Initiated` header
+* #edge-widevine-drm - **Disabled**
+	* Needed for Netflix, Spotify, etc.
 </p></details>
