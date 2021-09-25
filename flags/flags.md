@@ -6,28 +6,25 @@ In order to modify flags, you must access `chrome://flags`
 
 <details><summary>Enabled:</summary><p>
 
-
-
-
 * #block-insecure-private-network-requests
 * #clear-cross-site-cross-browsing-context-group-window-name
 * #cross-origin-embedder-policy-credentialless
 * #disallow-doc-written-script-loads
 	* Enabling it breaks `--blink-settings="preferredColorScheme=1"`
 	* If you use Brave Browser with Fingerprinting blocking Strict, just enable the flag
-* #dns-httpssvc
-	* Make sure you are using a secure DNS. If not, ignore it
 * #enable-removing-all-third-party-cookies
 * #enable-web-bluetooth-new-permissions-backend
-	* Go to chrome://settings/content/bluetoothDevices and disable the permission
-	* On Android, Go to Settings → Site Settings → Bluetooth → Disable the permission
+	* Go to `chrome://settings/content/bluetoothDevices` and disable the permission
+	* On Android, Go to Settings → Site Settings → Bluetooth → disable the permission
 * #force-effective-connection-type - **Slow 2G**
 * #heavy-ad-privacy-mitigations
 * #http-cache-partitioning
+* #https-only-mode-setting
+	* Go to `chrome://settings/security` and enable `Always use secure connections`
 * #isolate-origins
 * #isolation-by-default
 	* Breaks captchas and DevTools
-* #omnibox-default-typed-navigations-to-https
+* #partitioned-cookies
 * #post-quantum-cecpq2
 * #reduce-user-agent
 * #restrict-gamepad-access
@@ -37,7 +34,6 @@ In order to modify flags, you must access `chrome://flags`
 
 <details><summary>Disabled:</summary><p>
 
-* #allow-sync-xhr-in-page-dismissal
 * #cast-media-route-provider
 * #enable-first-party-sets
 * #enable-generic-sensor-extra-classes
@@ -49,12 +45,8 @@ In order to modify flags, you must access `chrome://flags`
 * #font-access
 * #font-access-persistent
 * #happiness-tracking-surveys-for-desktop-demo
-* #happiness-tracking-surveys-for-desktop-privacy-sandbox
-* #happiness-tracking-surveys-for-desktop-settings
-* #happiness-tracking-surveys-for-desktop-settings-privacy
 * #hardware-media-key-handling
 * #media-router-cast-allow-all-ips
-* #raw-clipboard
 * #safety-check-chrome-cleaner-child
 * #sameparty-cookies-considered-first-party
 * #show-autofill-type-predictions
@@ -69,16 +61,16 @@ In order to modify flags, you must access `chrome://flags`
 
 <details><summary>Enabled</summary><p>
 
-* #content-settings-redesign
 * #enable-force-dark
 	* Personal preference
 * #enable-reader-mode
 * #global-media-controls-modern-ui
-* #global-media-controls-overlay-controls
 * #page-info-version-2-desktop
 * #privacy-advisor
 * #read-later
 * #scrollable-tabstrip
+* #sharing-desktop-screenshots
+* #sharing-hub-desktop-omnibox
 * #tab-groups-auto-create
 * #tab-groups-collapse
 * #webui-branding-update
@@ -86,13 +78,14 @@ In order to modify flags, you must access `chrome://flags`
 
 <details><summary>Disabled</summary><p>
 
-* #detect-target-embedding-lookalikes
 * #enable-translate-sub-frames
 * #in-product-help-demo-mode-choice
+* #in-product-help-snooze
 * #smooth-scrolling
 	* Personal preference
 * #sms-receiver-cross-device
 * #username-first-flow
+* #username-first-flow-fallback-crowdsourcing
 * #username-first-flow-filling
 </p></details>
 
@@ -106,7 +99,6 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-lite-video
 * #enable-parallel-downloading
 * #enable-quic
-* #enable-skia-renderer
 * #enable-throttle-display-none-and-visibility-hidden-cross-origin-iframes
 * #enable-vulkan - Disabled, due to causing completely black web pages and making browser laggy
 	* This flag is enabled by default on some/most devices
@@ -138,7 +130,6 @@ Forcing them might be a bad idea. Therefore, before using them, please check out
 
 <details><summary>Enabled</summary><p>
 
-* #actionable-content-settings - **Enabled**
 * #download-auto-resumption-native - **Enabled**
 * #enable-instant-start - **Enabled**
 * #enable-site-isolation-for-password-sites - **Enabled**
@@ -161,10 +152,10 @@ Forcing them might be a bad idea. Therefore, before using them, please check out
 * #brave-adblock-cname-uncloaking - **Enabled**
 	* Keep it disabled on MacOS
 * #brave-adblock-cosmetic-filtering - **Enabled**
-* #brave-adblock-cosmetic-filtering-native - **Enabled**
 * #brave-adblock-csp-rules - **Enabled**
 * #brave-adblock-default-1p-blocking - **Enabled**
 * #brave-dark-mode-block - **Enabled**
+* #brave-debounce - **Enabled**
 * #brave-domain-block - **Enabled**
 * #brave-ephemeral-storage - **Enabled**
 * #brave-ephemeral-storage-keep-alive - **Enabled**
@@ -193,6 +184,7 @@ Forcing them might be a bad idea. Therefore, before using them, please check out
 <details><summary>Edge Chromium</summary><p>
 
 * #edge-automatic-https - **Enabled**
+	* Go to `edge://settings/privacy`, Enable `Automatically switch to more secure connections with Automatic HTTPS` and choose `Always switch from HTTP to HTTPS (connection errors might occur more often)`
 * #edge-autoplay-user-setting-block-option - **Enabled**
 * #edge-enable-super-duper-secure-mode - **Enabled**
 	* A new security feature by Microsoft. The flag disables JIT and WebAssembly (we also do it via command line flags) and enables ACG, CFG and CET mitigations
