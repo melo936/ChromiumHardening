@@ -1,7 +1,7 @@
 ## Command Line
 
 ```
---block-new-web-contents --disable-background-networking --disable-breakpad --disable-composited-antialiasing --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-external-intent-requests --disable-notifications --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --gpu-rasterization-msaa-sample-count=0 --no-pings --num-raster-threads=4 --process-per-site --site-per-process --use-fake-device-for-media-stream --enable-features="AudioWorkletThreadRealtimePriority,BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,BrowserDynamicCodeDisabled,EnableCsrssLockdown,GpuAppContainer,ImprovedCookieControlsIsolateOrigins,LegacyTLSEnforced,MinimizeAudioProcessingForUnusedOutput,NetworkServiceCodeIntegrity,NetworkServiceSandbox,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PartitionedCookies,PrefetchPrivacyChanges,ReduceUserAgent,ReducedReferrerGranularity,SplitAuthCacheByNetworkIsolationKey,SplitCacheByIncludeCredentials,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,ThirdPartyStoragePartitioning,UseRegistrableDomainInNetworkIsolationKey,WebAppEnableIsolatedStorage,WinSboxDisableExtensionPoint,WinSboxDisableKtmComponent" --disable-features="AppActivityReporting,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,ComputePressure,ConversionMeasurement,CopyLinkToText,CrashReporting,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,DirectSockets,DocumentReporting,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableStructuredMetrics,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,ExperimentalJSProfiler,FederatedLearningOfCohorts,FlocIdComputedEventLogging,GreaseUACH,HandwritingRecognitionWebPlatformApiFinch,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,LangClientHintHeader,MediaDrmPreprovisioning,NetworkTimeServiceQuerying,NotificationTriggers,PasswordCheck,PrefersColorSchemeClientHintHeader,Reporting,SafeBrowsingEnhancedProtection,SignedExchangeReportingForDistributors,SubresourceWebBundles,TabMetricsLogging,TextFragmentAnchor,UserAgentClientHint,ViewportHeightClientHintHeader,WebNFC,WebUSB,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation" --connectivity-check-url="0.0.0.0" --crash-server-url="0.0.0.0" --gaia-url="0.0.0.0" --gcm-checkin-url="0.0.0.0" --gcm-mcs-endpoint="0.0.0.0" --gcm-registration-url="0.0.0.0" --google-apis-url="0.0.0.0" --google-base-url="0.0.0.0" --google-doodle-url="0.0.0.0" --lso-url="0.0.0.0" --oauth-account-manager-url="0.0.0.0" --override-metrics-upload-url="0.0.0.0" --realtime-reporting-url="0.0.0.0" --sync-url="0.0.0.0" --url="0.0.0.0" --variations-server-url="0.0.0.0" --cipher-suite-blacklist="0xc013,0xc014,0x009c,0x009d,0x002f,0x0035" --enable-strict-mixed-content-checking --js-flags="--jitless --noexpose_wasm" --blink-settings="dnsPrefetchingEnabled=false,preferredColorScheme=1,strictMixedContentChecking=true,strictMixedContentCheckingForPlugin=true,strictlyBlockBlockableMixedContent=true" --disable-blink-features="PrefersContrast,SharedWorker,GravitySensor"
+--block-new-web-contents --disable-background-networking --disable-breakpad --disable-composited-antialiasing --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-external-intent-requests --disable-notifications --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --gpu-rasterization-msaa-sample-count=0 --no-pings --num-raster-threads=4 --process-per-site --site-per-process --use-fake-device-for-media-stream --enable-features="AudioWorkletThreadRealtimePriority,BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,BrowserDynamicCodeDisabled,EnableCsrssLockdown,GpuAppContainer,ImprovedCookieControlsIsolateOrigins,LegacyTLSEnforced,MinimizeAudioProcessingForUnusedOutput,NetworkServiceCodeIntegrity,NetworkServiceSandbox,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PartitionedCookies,PrefetchPrivacyChanges,ReduceUserAgent,ReducedReferrerGranularity,SplitAuthCacheByNetworkIsolationKey,SplitCacheByIncludeCredentials,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,ThirdPartyStoragePartitioning,UseRegistrableDomainInNetworkIsolationKey,WebAppEnableIsolatedStorage,WinSboxDisableExtensionPoint,WinSboxDisableKtmComponent" --disable-features="AppActivityReporting,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,ComputePressure,ConversionMeasurement,CopyLinkToText,CrashReporting,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,DirectSockets,DocumentReporting,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableStructuredMetrics,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,ExperimentalJSProfiler,FederatedLearningOfCohorts,FlocIdComputedEventLogging,GreaseUACH,HandwritingRecognitionWebPlatformApiFinch,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,LangClientHintHeader,MediaDrmPreprovisioning,NetworkTimeServiceQuerying,NotificationTriggers,PasswordCheck,PrefersColorSchemeClientHintHeader,Reporting,SafeBrowsingEnhancedProtection,SignedExchangeReportingForDistributors,SubresourceWebBundles,TabMetricsLogging,TextFragmentAnchor,UserAgentClientHint,ViewportHeightClientHintHeader,WebNFC,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation" --connectivity-check-url="0.0.0.0" --crash-server-url="0.0.0.0" --gaia-url="0.0.0.0" --gcm-checkin-url="0.0.0.0" --gcm-mcs-endpoint="0.0.0.0" --gcm-registration-url="0.0.0.0" --google-apis-url="0.0.0.0" --google-base-url="0.0.0.0" --google-doodle-url="0.0.0.0" --lso-url="0.0.0.0" --oauth-account-manager-url="0.0.0.0" --override-metrics-upload-url="0.0.0.0" --realtime-reporting-url="0.0.0.0" --sync-url="0.0.0.0" --url="0.0.0.0" --variations-server-url="0.0.0.0" --cipher-suite-blacklist="0xc013,0xc014,0x009c,0x009d,0x002f,0x0035" --enable-strict-mixed-content-checking --js-flags="--jitless --noexpose_wasm" --blink-settings="dnsPrefetchingEnabled=false,preferredColorScheme=1,strictMixedContentChecking=true,strictMixedContentCheckingForPlugin=true,strictlyBlockBlockableMixedContent=true" --disable-blink-features="PrefersContrast,GravitySensor"
 ```
 
 Triple click to select the entire line.
@@ -164,8 +164,8 @@ Others:
 	* Blocks Safe Browsing
 * TextFragmentAnchor, CopyLinkToText
 	* Disables text snippets in URL fragments
-* WebNFC, WebUSB, WebXR
-	* Blocks NFC, USB and XR APIs
+* WebNFC, WebXR
+	* Blocks NFC and XR APIs
 * WinrtGeolocationImplementation
 	* Blocks Geolocation, you might need to enable it if you are going to use Maps
 * WinrtSensorsImplementation
@@ -211,9 +211,7 @@ blink-settings:
 
 disable-blink-features:
 * PrefersContrast
-* SharedWorker
-	* We benefit from disabling SharedWorker - reduces leakage (when extensions modify WebAPIs), - because it isn't available on Android, which means most websites will still work without SharedWorker.
-* GravitySensor	
+* GravitySensor
 
 </p></details>
 
@@ -231,16 +229,17 @@ If WebGL is necessary, you can disable WebGL2 instead of disabling the whole "We
 
 #### WebAssembly
 
-Some websites may require WebAssembly to work (Figma, for example). In order to fix it remove this line: 
-> --js-flags=--noexpose_wasm
+Some websites may require WebAssembly to work (Figma, for example)
+
+Remove `--noexpose_wasm` from `--js-flags`
 
 #### Cannot access any website on Linux
 
 Remove `NetworkServiceSandbox` from `--enable-featues`
 
-#### Slower performance
+#### Slower JavaScript performance
 
-Using JITless mode might reduce V8’s performance [More Information](https://v8.dev/blog/jitless)
+Using JITless mode improves security, but might reduce V8’s performance [More Information](https://v8.dev/blog/jitless)
 
 Remove `--jitless` from `--js-flags`
 
