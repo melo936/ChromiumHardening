@@ -7,15 +7,16 @@ In order to modify flags, you must access `chrome://flags`
 <details><summary>Enabled:</summary><p>
 
 * #block-insecure-private-network-requests
-* #clear-cross-site-cross-browsing-context-group-window-name
 * #cross-origin-embedder-policy-credentialless
 * #disallow-doc-written-script-loads
 	* Enabling it breaks `--blink-settings="preferredColorScheme=1"`
 	* If you use Brave Browser with Fingerprinting blocking Strict, just enable the flag
+* #enable-browsing-data-lifetime-manager
 * #enable-removing-all-third-party-cookies
 * #enable-web-bluetooth-new-permissions-backend
 	* Go to `chrome://settings/content/bluetoothDevices` and disable the permission
 	* On Android, Go to Settings → Site Settings → Bluetooth → disable the permission
+* #enable-webrtc-hide-local-ips-with-mdns
 * #force-effective-connection-type - **Slow 2G**
 * #heavy-ad-privacy-mitigations
 * #http-cache-partitioning
@@ -26,6 +27,7 @@ In order to modify flags, you must access `chrome://flags`
 	* Breaks captchas and DevTools
 * #partitioned-cookies
 * #post-quantum-cecpq2
+* #enable-browsing-data-lifetime-manager
 * #reduce-user-agent
 * #restrict-gamepad-access
 * #strict-extension-isolation
@@ -34,9 +36,11 @@ In order to modify flags, you must access `chrome://flags`
 
 <details><summary>Disabled:</summary><p>
 
-* #cast-media-route-provider
 * #enable-first-party-sets
 * #enable-generic-sensor-extra-classes
+* #enable-quic
+	* QUIC used to cause blockers to be bypassed. Fortunately, it is fixed now. However, it causes preconnections which might be privacy implication. Keep it default for better performance.
+		> https://svs.informatik.uni-hamburg.de/publications/2019/2019-02-26-Sy-PET_Symposium-A_QUIC_Look_at_Web_Tracking.pdf
 * #enable-webrtc-remote-event-log
 * #enable-winrt-geolocation-implementation
 	* You might need to enable it for Maps
@@ -66,8 +70,6 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-reader-mode
 * #global-media-controls-modern-ui
 * #page-info-version-2-desktop
-* #privacy-advisor
-* #read-later
 * #scrollable-tabstrip
 * #sharing-desktop-screenshots
 * #sharing-hub-desktop-omnibox
@@ -98,13 +100,12 @@ In order to modify flags, you must access `chrome://flags`
 * #calculate-native-win-occlusion
 * #enable-lite-video
 * #enable-parallel-downloading
-* #enable-quic
 * #enable-throttle-display-none-and-visibility-hidden-cross-origin-iframes
 * #enable-vulkan - Disabled, due to causing completely black web pages and making browser laggy
 	* This flag is enabled by default on some/most devices
 	* If you don't experience the same problem, keep this flag default
 * #intensive-wake-up-throttling - **Enabled**
-	* Enabled 10 seconds after a tab is hidden should improve battery life. However, you might have issues on some websites which don't use native Downloading system 
+	* `Enabled 10 seconds after a tab is hidden` should improve battery life. However, you might have (pausing) issues on some websites which don't use the native downloading system
 * #lite-video-force-override-decision
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
 	* Use this flag for Skylake or newer
@@ -148,8 +149,11 @@ Forcing them might be a bad idea. Therefore, before using them, please check out
 
 <details><summary>Brave Browser</summary><p>
 
+These flags are from Nightly builds, some of them might not be available in other builds.
+
 * #brave-adblock-cname-uncloaking - **Enabled**
 	* Keep it disabled on MacOS
+	* If you notice DNS leak, disable it
 * #brave-adblock-cosmetic-filtering - **Enabled**
 * #brave-adblock-csp-rules - **Enabled**
 * #brave-adblock-default-1p-blocking - **Enabled**
@@ -160,8 +164,8 @@ Forcing them might be a bad idea. Therefore, before using them, please check out
 * #brave-ephemeral-storage-keep-alive - **Enabled**
 * #brave-extension-network-blocking - **Enabled**
 * #brave-speedreader - **Enabled**
-* #brave-talk - **Enabled**
 * #sidebar - **Enabled**
+* #brave-first-party-ephemeral-storage - **Enabled**
 
 </p></details>
 
@@ -188,6 +192,7 @@ Forcing them might be a bad idea. Therefore, before using them, please check out
 * #edge-enable-super-duper-secure-mode - **Enabled**
 	* A new security feature by Microsoft. The flag disables JIT and WebAssembly (we also do it via command line flags) and enables ACG, CFG and CET mitigations
 * #edge-experimental-tracking-prevention-features - **Enabled**
+* #edge-haptics-api - **Disabled**
 * #edge-log-textfield-lag - **Disabled**
 * #edge-math-solver - **Disabled**
 * #edge-media-autoplay-limit-default - **Enabled**
@@ -202,4 +207,5 @@ Forcing them might be a bad idea. Therefore, before using them, please check out
 	* Enabled might improve security, yet it might be used for fingerprinting, due to sending the `X-MS-ApplicationGuard-Initiated` header
 * #edge-widevine-drm - **Disabled**
 	* Needed for Netflix, Spotify, etc.
+#edge-haptics-api
 </p></details>
