@@ -63,6 +63,7 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-force-dark
 	* Personal preference
 * #enable-reader-mode
+* #extensions-menu-access-control
 * #page-info-version-2-desktop
 * #scrollable-tabstrip
 * #sharing-desktop-screenshots
