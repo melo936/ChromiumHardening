@@ -12,22 +12,17 @@ In order to modify flags, you must access `chrome://flags`
 	* Enabling it breaks `--blink-settings="preferredColorScheme=1"`
 	* If you use Brave Browser with Fingerprinting blocking Strict, just enable the flag
 * #enable-browsing-data-lifetime-manager
-* #enable-removing-all-third-party-cookies
 * #enable-web-bluetooth-new-permissions-backend
 	* Go to `chrome://settings/content/bluetoothDevices` and disable the permission
 	* On Android, Go to Settings → Site Settings → Bluetooth → disable the permission
 * #enable-webrtc-hide-local-ips-with-mdns
 * #force-effective-connection-type - **Slow 2G**
 * #heavy-ad-privacy-mitigations
-* #http-cache-partitioning
 * #https-only-mode-setting
 	* Go to `chrome://settings/security` and enable `Always use secure connections`
 * #isolate-origins
-* #isolation-by-default
-	* Breaks captchas and DevTools
 * #partitioned-cookies
 * #post-quantum-cecpq2
-* #enable-browsing-data-lifetime-manager
 * #reduce-user-agent
 * #restrict-gamepad-access
 * #strict-extension-isolation
@@ -45,13 +40,13 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-winrt-geolocation-implementation
 	* You might need to enable it for Maps
 * #enterprise-realtime-extension-request
+* #enterprise-reporting-extension-manifest-version
 * #file-handling-api
 * #font-access
 * #font-access-persistent
 * #happiness-tracking-surveys-for-desktop-demo
 * #hardware-media-key-handling
 * #media-router-cast-allow-all-ips
-* #safety-check-chrome-cleaner-child
 * #sameparty-cookies-considered-first-party
 * #show-autofill-type-predictions
 * #trust-tokens
@@ -68,14 +63,12 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-force-dark
 	* Personal preference
 * #enable-reader-mode
-* #global-media-controls-modern-ui
 * #page-info-version-2-desktop
 * #scrollable-tabstrip
 * #sharing-desktop-screenshots
 * #sharing-hub-desktop-omnibox
-* #tab-groups-auto-create
-* #tab-groups-collapse
 * #webui-branding-update
+* #win11-style-menus
 </p></details>
 
 <details><summary>Disabled</summary><p>
@@ -96,14 +89,17 @@ In order to modify flags, you must access `chrome://flags`
 <details><summary>Enabled</summary><p>
 
 * #back-forward-cache - **Enabled force caching all pages (experimntal)**
-	* Make sure you are using `#http-cache-partitioning` and command line flags
+	* Make sure you are using command line flags
 * #calculate-native-win-occlusion
 * #enable-lite-video
 * #enable-parallel-downloading
+* #enable-skia-renderer
 * #enable-throttle-display-none-and-visibility-hidden-cross-origin-iframes
-* #enable-vulkan - Disabled, due to causing completely black web pages and making browser laggy
+* #enable-vulkan - Disabled, due to causing completely black web pages and making browsers laggy
 	* This flag is enabled by default on some/most devices
 	* If you don't experience the same problem, keep this flag default
+* #enable-webassembly-lazy-compilation
+	* This flag is placebo when JITLess mode or `#edge-enable-super-duper-secure-mode` are enabled 
 * #intensive-wake-up-throttling - **Enabled**
 	* `Enabled 10 seconds after a tab is hidden` should improve battery life. However, you might have (pausing) issues on some websites which don't use the native downloading system
 * #lite-video-force-override-decision
@@ -207,5 +203,4 @@ These flags are from Nightly builds, some of them might not be available in othe
 	* Enabled might improve security, yet it might be used for fingerprinting, due to sending the `X-MS-ApplicationGuard-Initiated` header
 * #edge-widevine-drm - **Disabled**
 	* Needed for Netflix, Spotify, etc.
-#edge-haptics-api
 </p></details>
