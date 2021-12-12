@@ -101,8 +101,6 @@ In order to modify flags, you must access `chrome://flags`
 	* If you don't experience the same problem, keep this flag default
 * #enable-webassembly-lazy-compilation
 	* This flag is placebo when JITLess mode or `#edge-enable-super-duper-secure-mode` are enabled 
-* #intensive-wake-up-throttling - **Enabled**
-	* `Enabled 10 seconds after a tab is hidden` should improve battery life. However, you might have (pausing) issues on some websites which don't use the native downloading system
 * #lite-video-force-override-decision
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
 	* Use this flag for Skylake or newer
@@ -183,6 +181,7 @@ These flags are from Nightly builds, some of them might not be available in othe
 
 <details><summary>Edge Chromium</summary><p>
 
+* #edge-auto-enter-immersive-reader
 * #edge-automatic-https - **Enabled**
 	* Go to `edge://settings/privacy`, Enable `Automatically switch to more secure connections with Automatic HTTPS` and choose `Always switch from HTTP to HTTPS (connection errors might occur more often)`
 * #edge-autoplay-user-setting-block-option - **Enabled**
@@ -191,17 +190,12 @@ These flags are from Nightly builds, some of them might not be available in othe
 * #edge-experimental-tracking-prevention-features - **Enabled**
 * #edge-haptics-api - **Disabled**
 * #edge-log-textfield-lag - **Disabled**
-* #edge-math-solver - **Disabled**
 * #edge-media-autoplay-limit-default - **Enabled**
-* #edge-on-demand-media-router - **Disabled**
-	* Needed for Cast
 * #edge-playready-drm-win10 - **Disabled**
 	* Needed for Netflix, Spotify, etc.
 * #edge-robin - **Enabled**
 * #edge-show-feature-recommendations - **Disabled**
 * #edge-toast-winrt - **Disabled**
-* #edge-wdag-traffic-identification - **Disabled**
-	* Enabled might improve security, yet it might be used for fingerprinting, due to sending the `X-MS-ApplicationGuard-Initiated` header
 * #edge-widevine-drm - **Disabled**
 	* Needed for Netflix, Spotify, etc.
 </p></details>
