@@ -183,7 +183,7 @@ These flags are from Nightly builds, some of them might not be available in othe
 <details><summary>Bromite</summary><p>
 
 * #disable-webgl - Disabled
-	* It should be "Enabled" to actually disable WebGL, but it's a typo.
+	* It should say "Enabled" to actually disable WebGL, but it's a typo.
 * #num-raster-threads - 4
 </p></details>
 

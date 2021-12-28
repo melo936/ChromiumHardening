@@ -1,7 +1,7 @@
 ## Command Line
 
 ```
---block-new-web-contents --disable-background-networking --disable-breakpad --disable-composited-antialiasing --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-external-intent-requests --disable-notifications --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --gpu-rasterization-msaa-sample-count=0 --no-pings --num-raster-threads=4 --process-per-site --site-per-process --use-fake-device-for-media-stream --enable-features="AudioWorkletThreadRealtimePriority,BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,BrowserDynamicCodeDisabled,EnableCsrssLockdown,EncryptedClientHello,GpuAppContainer,ImprovedCookieControlsIsolateOrigins,LegacyTLSEnforced,MinimizeAudioProcessingForUnusedOutput,NetworkServiceCodeIntegrity,NetworkServiceSandbox,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PartitionedCookies,PrefetchPrivacyChanges,ReduceUserAgent,ReducedReferrerGranularity,SandboxExternalProtocolBlocked,SplitAuthCacheByNetworkIsolationKey,SplitCacheByIncludeCredentials,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,ThirdPartyStoragePartitioning,UseRegistrableDomainInNetworkIsolationKey,WebAppEnableIsolatedStorage,WinSboxDisableExtensionPoint,WinSboxDisableKtmComponent" --disable-features="AdInterestGroupAPI,AllowClientHintsToThirdParty,AppActivityReporting,AppDiscoveryRemoteUrlSearch,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,ClearCrossSiteCrossBrowsingContextGroupWindowName,ClientHintThirdPartyDelegation,ClientHintsDPR,ClientHintsDPR_DEPRECATED,ClientHintsDeviceMemory,ClientHintsDeviceMemory_DEPRECATED,ClientHintsMetaHTTPEquivAcceptCH,ClientHintsMetaNameAcceptCH,ClientHintsResourceWidth,ClientHintsResourceWidth_DEPRECATED,ClientHintsViewportWidth,ClientHintsViewportWidth_DEPRECATED,ComputePressure,ContextMenuPerformanceInfoAndRemoteHintFetching,ConversionMeasurement,CopyLinkToText,CrashReporting,CriticalClientHint,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,DirectSockets,DocumentReporting,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableStructuredMetrics,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,ExperimentalJSProfiler,FederatedLearningOfCohorts,Fledge,FlocIdComputedEventLogging,GreaseUACH,HandwritingRecognitionWebPlatformApiFinch,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,InterestGroupStorage,MediaDrmPreprovisioning,NetworkTimeServiceQuerying,NotificationTriggers,OptimizationHints,OptimizationHintsFetching,OptimizationHintsFetchingAnonymousDataConsent,OptimizationHintsFieldTrials,Parakeet,Prerender2,PrefersColorSchemeClientHintHeader,ReportAllJavaScriptFrameworks,Reporting,SignedExchangeReportingForDistributors,SpeculationRulesPrefetchProxy,SubresourceWebBundles,TabMetricsLogging,TextFragmentAnchor,UACHPlatformEnabledByDefault,UserAgentClientHint,UserAgentClientHintFullVersionList,ViewportHeightClientHintHeader,WebNFC,WebSQLInThirdPartyContextEnabled,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation" --connectivity-check-url="0.0.0.0" --crash-server-url="0.0.0.0" --gaia-url="0.0.0.0" --gcm-checkin-url="0.0.0.0" --gcm-mcs-endpoint="0.0.0.0" --gcm-registration-url="0.0.0.0" --google-apis-url="0.0.0.0" --google-base-url="0.0.0.0" --google-doodle-url="0.0.0.0" --lso-url="0.0.0.0" --oauth-account-manager-url="0.0.0.0" --override-metrics-upload-url="0.0.0.0" --realtime-reporting-url="0.0.0.0" --sync-url="0.0.0.0" --url="0.0.0.0" --variations-server-url="0.0.0.0" --cipher-suite-blacklist="0xc013,0xc014,0x009c,0x009d,0x002f,0x0035" --enable-strict-mixed-content-checking --js-flags="--jitless --noexpose_wasm" --blink-settings="dnsPrefetchingEnabled=false,preferredColorScheme=1,strictMixedContentChecking=true,strictMixedContentCheckingForPlugin=true,strictlyBlockBlockableMixedContent=true" --disable-blink-features="PrefersContrast,GravitySensor" --isolation-by-default
+--block-new-web-contents --disable-background-networking --disable-breakpad --disable-composited-antialiasing --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-external-intent-requests --disable-notifications --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --gpu-rasterization-msaa-sample-count=0 --no-pings --num-raster-threads=4 --process-per-site --site-per-process --use-fake-device-for-media-stream --enable-features="AudioWorkletThreadRealtimePriority,BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,BrowserDynamicCodeDisabled,DisableProcessReuse,EnableCsrssLockdown,EncryptedClientHello,GpuAppContainer,ImprovedCookieControlsIsolateOrigins,IsolatePrerenders,LegacyTLSEnforced,MinimizeAudioProcessingForUnusedOutput,NetworkServiceSandbox,NetworkServiceCodeIntegrity,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PartitionedCookies,PrefetchPrivacyChanges,ReduceUserAgent,ReducedReferrerGranularity,RendererAppContainer,SandboxExternalProtocolBlocked,SplitAuthCacheByNetworkIsolationKey,SplitCacheByIncludeCredentials,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,SuppressDifferentOriginSubframeJSDialogs,ThirdPartyStoragePartitioning,UseRegistrableDomainInNetworkIsolationKey,WebAppEnableIsolatedStorage,WinSboxDisableExtensionPoint,WinSboxDisableKtmComponent" --disable-features="AdInterestGroupAPI,AllowClientHintsToThirdParty,AppActivityReporting,AppDiscoveryRemoteUrlSearch,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,ClearCrossSiteCrossBrowsingContextGroupWindowName,ClientHintThirdPartyDelegation,ClientHintsDPR,ClientHintsDPR_DEPRECATED,ClientHintsDeviceMemory,ClientHintsDeviceMemory_DEPRECATED,ClientHintsMetaHTTPEquivAcceptCH,ClientHintsMetaNameAcceptCH,ClientHintsResourceWidth,ClientHintsResourceWidth_DEPRECATED,ClientHintsViewportWidth,ClientHintsViewportWidth_DEPRECATED,ComputePressure,ContextMenuPerformanceInfoAndRemoteHintFetching,ConversionMeasurement,CopyLinkToText,CrashReporting,CriticalClientHint,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,DirectSockets,DocumentReporting,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableStructuredMetrics,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,ExperimentalJSProfiler,FederatedLearningOfCohorts,Fledge,FlocIdComputedEventLogging,GreaseUACH,HandwritingRecognitionWebPlatformApiFinch,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,InterestGroupStorage,MediaDrmPreprovisioning,MediaEngagementBypassAutoplayPolicies,NTPArticleSuggestions,NetworkTimeServiceQuerying,NotificationTriggers,OptimizationHints,OptimizationHintsFetching,OptimizationHintsFetchingAnonymousDataConsent,OptimizationHintsFieldTrials,Parakeet,Prerender2,PrefersColorSchemeClientHintHeader,PreloadMediaEngagementData,ReportAllJavaScriptFrameworks,Reporting,SignedExchangeReportingForDistributors,SpeculationRulesPrefetchProxy,SubresourceWebBundles,TabMetricsLogging,TextFragmentAnchor,UACHPlatformEnabledByDefault,UserAgentClientHint,UserAgentClientHintFullVersionList,ViewportHeightClientHintHeader,WebNFC,WebSQLInThirdPartyContextEnabled,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation" --connectivity-check-url="0.0.0.0" --crash-server-url="0.0.0.0" --gaia-url="0.0.0.0" --gcm-checkin-url="0.0.0.0" --gcm-mcs-endpoint="0.0.0.0" --gcm-registration-url="0.0.0.0" --google-apis-url="0.0.0.0" --google-base-url="0.0.0.0" --google-doodle-url="0.0.0.0" --lso-url="0.0.0.0" --oauth-account-manager-url="0.0.0.0" --override-metrics-upload-url="0.0.0.0" --realtime-reporting-url="0.0.0.0" --sync-url="0.0.0.0" --url="0.0.0.0" --variations-server-url="0.0.0.0" --cipher-suite-blacklist="0xc013,0xc014,0x009c,0x009d,0x002f,0x0035" --enable-strict-mixed-content-checking --js-flags="--jitless --noexpose_wasm" --blink-settings="dnsPrefetchingEnabled=false,preferredColorScheme=1,strictMixedContentChecking=true,strictMixedContentCheckingForPlugin=true,strictlyBlockBlockableMixedContent=true" --disable-blink-features="PrefersContrast,GravitySensor" --isolation-by-default
 ```
 
 Triple click to select the entire line.
@@ -50,6 +50,7 @@ Triple click to select the entire line.
 
 Isolation:
 * IsolateOrigins
+* IsolatePrerenders
 * OriginIsolationHeader
 * PartitionConnectionsByNetworkIsolationKey
 * PartitionDomainReliabilityByNetworkIsolationKey
@@ -75,6 +76,7 @@ Sandboxing:
 * NetworkServiceCodeIntegrity
 	* Enables CIG in the network process
 * NetworkServiceSandbox
+* RendererAppContainer
 * SandboxExternalProtocolBlocked
 * WinSboxDisableExtensionPoint
 * WinSboxDisableKtmComponent
@@ -90,17 +92,22 @@ Privacy & Security:
 	* Improved third-party cookie blocking/control
 * LegacyTLSEnforced
 	* Enforce deprecation of legacy TLS versions
-* ReduceUserAgent
-	* The (edge://)flag version isn't available on Edge
+* DisableProcessReuse, ReduceUserAgent
+	* The (edge://)flags version are not available on Edge
 * PrefetchPrivacyChanges
 	* Prefetch requests will not follow redirects, not send a Referer header, not send credentials for cross-origin requests, and do not pass through service workers
 * ReducedReferrerGranularity
 	* Enables strict-origin-when-cross-origin
 
+
 Performance:
 * AudioWorkletThreadRealtimePriority
 * MinimizeAudioProcessingForUnusedOutput
 	* Reduces CPU load when all audio tracks are disabled
+
+Others:
+* SuppressDifferentOriginSubframeJSDialogs
+	* Disallows window.{alert, prompt, confirm} if triggered inside a subframe that is not same origin with the main frame
 </p></details>
 
 <details><summary>Disabled Features</summary><p>
@@ -128,7 +135,7 @@ Autofill:
 * AutofillEnableAccountWalletStorage
 * AutofillServerCommunication
 
-FloC:
+FLoC:
 * AdInterestGroupAPI
 * FederatedLearningOfCohorts
 * Fledge
@@ -186,9 +193,11 @@ Others:
 	* Blocks Idle Detection
 * MediaDrmPreprovisioning
 	* Blocks DRM (Might break Netflix and Spotify)
+* NTPArticleSuggestions
 * NetworkTimeServiceQuerying
 	* Disables network time queries in order to prevent Chromium connecting to `clients2.google.com`
 * NotificationTriggers
+* PreloadMediaEngagementData, MediaEngagementBypassAutoplayPolicies
 * Prerender2
 * SpeculationRulesPrefetchProxy
 * TextFragmentAnchor, CopyLinkToText
@@ -263,7 +272,7 @@ Some websites may require WebAssembly to work (Figma, for example)
 
 Remove `--noexpose_wasm` from `--js-flags`
 
-#### Cannot access any website on Linux
+#### Cannot access any website on Linux & Vivaldi doesn't run
 
 Remove `NetworkServiceSandbox` from `--enable-featues`
 
@@ -275,20 +284,28 @@ For some reason, ProtonMail doesn't work in JTLess mode
 
 Remove `--jitless` from `--js-flags`
 
-#### Devtools, captchas and third-party frames not working
+#### DevTools, captchas and other third-party frames not working
 
 Remove `--isolation-by-default`
 
-### Mega.nz
+#### Mega.nz
 
 Remove `0x002f` from `--cipher-suite-blacklist`
 
-### Crashes when downloading a file
+#### Crashes when downloading a file
 
 Remove `WebAppEnableIsolatedStorage` from `--enable-features`
+
+#### Micrphone and Camera do not work
+
+Remove `--use-fake-device-for-media-stream`
+
+#### RESULT_CODE_MISSING_DATA
+
+Remove `RendererAppContainer` from `--enable-features`
 
 ## Not recommended
 
 > --component-updater=url-source="0.0.0.0"
 
-I do not recommend to use it, because it is needed for up-to-date components (chrome://components), like native adblocker rules. However, browser still can be usable if your goal is to reduce internet traffics.
+I do not recommend to use it, because it is needed for up-to-date components (chrome://components), like CRLSets, native adblocker rules. However, the browser still can be usable if your goal is to reduce internet traffics.
