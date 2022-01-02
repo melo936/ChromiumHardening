@@ -7,7 +7,6 @@ In order to modify flags, you must access `chrome://flags`
 <details><summary>Enabled:</summary><p>
 
 * #block-insecure-private-network-requests
-* #cross-origin-embedder-policy-credentialless
 * #disable-process-reuse
 	* When enabled, out-of-process iframes will not try to reuse compatible processes from unrelated tabs, which might decrease performance. 
 	* The flag is force-enabled in command-line flags, due to it is hidden in MS Edge(://flags)
@@ -27,7 +26,6 @@ In order to modify flags, you must access `chrome://flags`
 * #partitioned-cookies
 * #post-quantum-cecpq2
 * #reduce-user-agent
-* #restrict-gamepad-access
 * #strict-extension-isolation
 * #strict-origin-isolation
 </p></details>
@@ -43,11 +41,8 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-webrtc-remote-event-log
 * #enable-winrt-geolocation-implementation
 	* You might need to enable it for Maps
-* #enterprise-realtime-extension-request
 * #enterprise-reporting-extension-manifest-version
 * #file-handling-api
-* #font-access
-* #font-access-persistent
 * #happiness-tracking-surveys-for-desktop-demo
 * #hardware-media-key-handling
 * #media-router-cast-allow-all-ips
@@ -69,9 +64,9 @@ In order to modify flags, you must access `chrome://flags`
 	* Personal preference
 * #enable-reader-mode
 * #extensions-menu-access-control
-* #page-info-version-2-desktop
 * #scrollable-tabstrip
 * #sharing-desktop-screenshots
+* #sharing-desktop-screenshots-edit
 * #sharing-hub-desktop-omnibox
 * #webui-branding-update
 * #win11-style-menus - Enabled - All Windows Versions
@@ -80,7 +75,6 @@ In order to modify flags, you must access `chrome://flags`
 
 <details><summary>Disabled</summary><p>
 
-* #enable-translate-sub-frames
 * #in-product-help-demo-mode-choice
 * #in-product-help-snooze
 * #smooth-scrolling
@@ -97,11 +91,8 @@ In order to modify flags, you must access `chrome://flags`
 
 * #back-forward-cache - **Enabled force caching all pages (experimntal)**
 	* Make sure you are using command line flags
-* #calculate-native-win-occlusion
 * #enable-lite-video
 * #enable-parallel-downloading
-* #subframe-shutdown-delay
-	* This flags doesn't have any effect when `#disable-process-reuse` is enabled
 * #enable-skia-renderer
 * #enable-throttle-display-none-and-visibility-hidden-cross-origin-iframes
 * #enable-vulkan - Disabled, due to causing completely black web pages and making browsers laggy
@@ -112,6 +103,10 @@ In order to modify flags, you must access `chrome://flags`
 * #lite-video-force-override-decision
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
 	* Use this flag for Skylake or newer
+* #subframe-shutdown-delay
+	* This flags doesn't have any effect when `#disable-process-reuse` is enabled
+* #turn-off-streaming-media-caching-always
+* #turn-off-streaming-media-caching-on-battery
 
 **These flags are not intented for every device, but worth testing.**
 
@@ -133,12 +128,10 @@ Forcing them might be a bad idea. Therefore, before using them, please check out
 
 <details><summary>Enabled</summary><p>
 
-* #download-auto-resumption-native - **Enabled**
 * #enable-instant-start - **Enabled**
 * #enable-site-isolation-for-password-sites - **Enabled**
 * #enable-site-per-process - **Enabled**
 * #omnibox-most-visited-tiles - **Enabled**
-* #page-info-discoverability - **Enabled**
 </p></details>
 
 <details><summary>Disabled</summary><p>
@@ -163,13 +156,14 @@ These flags are from Nightly builds, some of them might not be available in othe
 * #brave-dark-mode-block - **Enabled**
 * #brave-debounce - **Enabled**
 * #brave-domain-block - **Enabled**
+* #brave-domain-block-1pes - **Enabled**
 * #brave-ephemeral-storage - **Enabled**
 * #brave-ephemeral-storage-keep-alive - **Enabled**
 * #brave-extension-network-blocking - **Enabled**
 * #brave-speedreader - **Enabled**
 * #sidebar - **Enabled**
 * #brave-first-party-ephemeral-storage - **Enabled**
-
+* #brave-adblock-redirect-url - **Enabled**
 </p></details>
 
 <details><summary>Ungoogled Chromium</summary><p>
