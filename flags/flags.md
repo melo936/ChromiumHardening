@@ -19,9 +19,6 @@ In order to modify flags, you must access `chrome://flags`
 	* On Android, Go to Settings → Site Settings → Bluetooth → disable the permission
 * #enable-webrtc-hide-local-ips-with-mdns
 * #force-effective-connection-type - **Slow 2G**
-* #heavy-ad-privacy-mitigations
-* #https-only-mode-setting
-	* Go to `chrome://settings/security` and enable `Always use secure connections`
 * #isolate-origins
 * #partitioned-cookies
 * #post-quantum-cecpq2
@@ -35,13 +32,11 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-first-party-sets
 * #enable-generic-sensor-extra-classes
 * #enable-prerender2
-* #enable-quic
-	* QUIC used to cause blockers to be bypassed. Fortunately, it is fixed now. However, it causes preconnections which might be privacy implication. Keep it default for better performance.
-		> https://svs.informatik.uni-hamburg.de/publications/2019/2019-02-26-Sy-PET_Symposium-A_QUIC_Look_at_Web_Tracking.pdf
 * #enable-webrtc-remote-event-log
 * #enable-winrt-geolocation-implementation
 	* You might need to enable it for Maps
 * #enterprise-reporting-extension-manifest-version
+* #fedcm
 * #file-handling-api
 * #happiness-tracking-surveys-for-desktop-demo
 * #hardware-media-key-handling
@@ -53,7 +48,6 @@ In order to modify flags, you must access `chrome://flags`
 * #use-first-party-set
 * #web-bundles
 * #web-share
-* #webid
 </p></details>
 
 ## Usability
@@ -64,13 +58,12 @@ In order to modify flags, you must access `chrome://flags`
 	* Personal preference
 * #enable-reader-mode
 * #extensions-menu-access-control
+* #global-media-controls-modern-ui
 * #scrollable-tabstrip
 * #sharing-desktop-screenshots
 * #sharing-desktop-screenshots-edit
 * #sharing-hub-desktop-omnibox
 * #webui-branding-update
-* #win11-style-menus - Enabled - All Windows Versions
-	* Breaks Brave's Tor mode
 </p></details>
 
 <details><summary>Disabled</summary><p>
@@ -91,20 +84,17 @@ In order to modify flags, you must access `chrome://flags`
 
 * #back-forward-cache - **Enabled force caching all pages (experimntal)**
 	* Make sure you are using command line flags
-* #enable-lite-video
 * #enable-parallel-downloading
 * #enable-skia-renderer
+* #enable-quic
 * #enable-throttle-display-none-and-visibility-hidden-cross-origin-iframes
 * #enable-vulkan - Disabled, due to causing completely black web pages and making browsers laggy
 	* This flag is enabled by default on some/most devices
 	* If you don't experience the same problem, keep this flag default
 * #enable-webassembly-lazy-compilation
 	* This flag is placebo when JITLess mode or `#edge-enable-super-duper-secure-mode` are enabled 
-* #lite-video-force-override-decision
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
 	* Use this flag for Skylake or newer
-* #subframe-shutdown-delay
-	* This flags doesn't have any effect when `#disable-process-reuse` is enabled
 * #turn-off-streaming-media-caching-always
 * #turn-off-streaming-media-caching-on-battery
 
@@ -148,11 +138,11 @@ Forcing them might be a bad idea. Therefore, before using them, please check out
 These flags are from Nightly builds, some of them might not be available in other builds.
 
 * #brave-adblock-cname-uncloaking - **Enabled**
-	* Keep it disabled on MacOS
 	* If you notice DNS leak, disable it
 * #brave-adblock-cosmetic-filtering - **Enabled**
 * #brave-adblock-csp-rules - **Enabled**
 * #brave-adblock-default-1p-blocking - **Enabled**
+* #brave-adblock-redirect-url - **Enabled**
 * #brave-dark-mode-block - **Enabled**
 * #brave-debounce - **Enabled**
 * #brave-domain-block - **Enabled**
@@ -160,10 +150,10 @@ These flags are from Nightly builds, some of them might not be available in othe
 * #brave-ephemeral-storage - **Enabled**
 * #brave-ephemeral-storage-keep-alive - **Enabled**
 * #brave-extension-network-blocking - **Enabled**
-* #brave-speedreader - **Enabled**
-* #sidebar - **Enabled**
 * #brave-first-party-ephemeral-storage - **Enabled**
-* #brave-adblock-redirect-url - **Enabled**
+* #brave-speedreader - **Enabled**
+* #restrict-websockets-pool - **Enabled**
+* #sidebar - **Enabled**
 </p></details>
 
 <details><summary>Ungoogled Chromium</summary><p>
@@ -187,12 +177,14 @@ These flags are from Nightly builds, some of them might not be available in othe
 * #edge-automatic-https - **Enabled**
 	* Go to `edge://settings/privacy`, Enable `Automatically switch to more secure connections with Automatic HTTPS` and choose `Always switch from HTTP to HTTPS (connection errors might occur more often)`
 * #edge-autoplay-user-setting-block-option - **Enabled**
-* #edge-enable-super-duper-secure-mode - **Enabled**
-	* A new security feature by Microsoft. The flag disables JIT and WebAssembly (we also do it via command line flags) and enables ACG, CFG and CET mitigations
+* #edge-enable-bfcache-features - **Enabled**
 * #edge-experimental-tracking-prevention-features - **Enabled**
+* #edge-global-media-controls - **Enabled**
 * #edge-haptics-api - **Disabled**
 * #edge-log-textfield-lag - **Disabled**
 * #edge-media-autoplay-limit-default - **Enabled**
+* #edge-msb-all-dse - **Disabled**
+* #edge-msb-keyword-mode - **Disabled**
 * #edge-playready-drm-win10 - **Disabled**
 	* Needed for Netflix, Spotify, etc.
 * #edge-robin - **Enabled**
