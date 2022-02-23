@@ -64,6 +64,7 @@ In order to modify flags, you must access `chrome://flags`
 * #sharing-desktop-screenshots-edit
 * #sharing-hub-desktop-omnibox
 * #webui-branding-update
+	* Causes UI issues with Brave's settings
 </p></details>
 
 <details><summary>Disabled</summary><p>
