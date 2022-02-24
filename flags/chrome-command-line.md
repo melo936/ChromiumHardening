@@ -272,6 +272,12 @@ Remove these lines to fix extensions issues on Ungoogled Chromium
 If WebGL is necessary, you can disable WebGL2 instead of disabling the whole "WebGL system" 
 > --disable-webgl2
 
+#### Can not log into websites
+
+Some websites may prevent you from signing in as you are detected as a robot, like Google and SoundCloud.
+
+Remove `--disable-notifications`
+
 #### WebAssembly
 
 Some websites may require WebAssembly to work (Figma, for example)
