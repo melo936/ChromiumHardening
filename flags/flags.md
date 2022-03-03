@@ -23,7 +23,6 @@ In order to modify flags, you must access `chrome://flags`
 * #partitioned-cookies
 * #post-quantum-cecpq2
 * #reduce-user-agent
-* #strict-extension-isolation
 * #strict-origin-isolation
 </p></details>
 
@@ -38,6 +37,7 @@ In order to modify flags, you must access `chrome://flags`
 * #enterprise-reporting-extension-manifest-version
 * #fedcm
 * #file-handling-api
+* #font-access
 * #happiness-tracking-surveys-for-desktop-demo
 * #hardware-media-key-handling
 * #media-router-cast-allow-all-ips
@@ -62,7 +62,8 @@ In order to modify flags, you must access `chrome://flags`
 * #scrollable-tabstrip
 * #sharing-desktop-screenshots
 * #sharing-desktop-screenshots-edit
-* #sharing-hub-desktop-omnibox
+* #side-panel
+* #unified-side-panel
 * #webui-branding-update
 	* Causes UI issues with Brave's settings
 </p></details>
@@ -96,6 +97,8 @@ In order to modify flags, you must access `chrome://flags`
 	* This flag is placebo when JITLess mode or `#edge-enable-super-duper-secure-mode` are enabled 
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
 	* Use this flag for Skylake or newer
+* #subframe-shutdown-delay
+* #throttle-foreground-timers
 * #turn-off-streaming-media-caching-always
 * #turn-off-streaming-media-caching-on-battery
 
