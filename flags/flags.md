@@ -74,7 +74,6 @@ In order to modify flags, you must access `chrome://flags`
 * #in-product-help-snooze
 * #smooth-scrolling
 	* Personal preference
-* #sms-receiver-cross-device
 * #username-first-flow
 * #username-first-flow-fallback-crowdsourcing
 * #username-first-flow-filling
@@ -177,21 +176,20 @@ These flags are from Nightly builds, some of them might not be available in othe
 
 <details><summary>Edge Chromium</summary><p>
 
-* #edge-auto-enter-immersive-reader
 * #edge-automatic-https - **Enabled**
-	* Go to `edge://settings/privacy`, Enable `Automatically switch to more secure connections with Automatic HTTPS` and choose `Always switch from HTTP to HTTPS (connection errors might occur more often)`
+	* Go to `edge://settings/privacy`, enable `Automatically switch to more secure connections with Automatic HTTPS` and choose `Always switch from HTTP to HTTPS (connection errors might occur more often)`
 * #edge-autoplay-user-setting-block-option - **Enabled**
+	* Go to `edge://settings/content/mediaAutoplay` and set `Control if audio and video play automatically on sites` to `Block` 
 * #edge-enable-bfcache-features - **Enabled**
-* #edge-experimental-tracking-prevention-features - **Enabled**
 * #edge-global-media-controls - **Enabled**
 * #edge-haptics-api - **Disabled**
 * #edge-log-textfield-lag - **Disabled**
-* #edge-media-autoplay-limit-default - **Enabled**
 * #edge-msb-all-dse - **Disabled**
 * #edge-msb-keyword-mode - **Disabled**
 * #edge-playready-drm-win10 - **Disabled**
 	* Needed for Netflix, Spotify, etc.
 * #edge-robin - **Enabled**
+* #edge-sdsm-emulate-acg - **Enabled**
 * #edge-show-feature-recommendations - **Disabled**
 * #edge-toast-winrt - **Disabled**
 * #edge-widevine-drm - **Disabled**
