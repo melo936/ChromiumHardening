@@ -31,6 +31,7 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-first-party-sets
 * #enable-generic-sensor-extra-classes
 * #enable-prerender2
+* #enable-tls13-early-data
 * #enable-webrtc-remote-event-log
 * #enable-winrt-geolocation-implementation
 	* You might need to enable it for Maps

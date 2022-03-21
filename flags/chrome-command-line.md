@@ -1,7 +1,13 @@
 ## Command Line
 
+For any Chromium browser, except MS Edge:
 ```
---block-new-web-contents --disable-background-networking --disable-breakpad --disable-composited-antialiasing --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-external-intent-requests --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --gpu-rasterization-msaa-sample-count=0 --lite-video-force-override-decision --no-pings --num-raster-threads=4 --process-per-site --site-per-process --time-zone-for-testing=UTC --use-fake-device-for-media-stream --enable-features="BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,BrowserDynamicCodeDisabled,DisableProcessReuse,EnableCsrssLockdown,EncryptedClientHello,GpuAppContainer,ImprovedCookieControlsIsolateOrigins,IsolatePrerenders,MinimizeAudioProcessingForUnusedOutput,msPerformanceModeToggle,NetworkServiceSandbox,NetworkServiceCodeIntegrity,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PartitionedCookies,PrefetchPrivacyChanges,ReduceUserAgent,ReducedReferrerGranularity,RendererAppContainer,RestrictGamepadAccess,SandboxExternalProtocolBlocked,SplitAuthCacheByNetworkIsolationKey,SplitCacheByIncludeCredentials,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,SuppressDifferentOriginSubframeJSDialogs,ThirdPartyStoragePartitioning,UseRegistrableDomainInNetworkIsolationKey,WebAppEnableIsolatedStorage,WinSboxDisableExtensionPoint,WinSboxDisableKtmComponent" --disable-features="AcceptCHFrame,AdInterestGroupAPI,AllowClientHintsToThirdParty,AllowURNsInIframes,AppActivityReporting,AppDiscoveryRemoteUrlSearch,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,ClearCrossSiteCrossBrowsingContextGroupWindowName,ClientHintThirdPartyDelegation,ClientHintsDPR,ClientHintsDPR_DEPRECATED,ClientHintsDeviceMemory,ClientHintsDeviceMemory_DEPRECATED,ClientHintsMetaHTTPEquivAcceptCH,ClientHintsMetaNameAcceptCH,ClientHintsResourceWidth,ClientHintsResourceWidth_DEPRECATED,ClientHintsViewportWidth,ClientHintsViewportWidth_DEPRECATED,ComputePressure,ContextMenuPerformanceInfoAndRemoteHintFetching,ConversionMeasurement,CopyLinkToText,CrashReporting,CriticalClientHint,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,CssSelectorFragmentAnchor,DirectSockets,DocumentReporting,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableStructuredMetrics,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,ExperimentalJSProfiler,FederatedLearningOfCohorts,Fledge,FlocIdComputedEventLogging,FontAccess,FontAccessPersistent,GreaseUACH,HandwritingRecognitionWebPlatformApiFinch,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,InterestGroupStorage,MediaDrmPreprovisioning,MediaEngagementBypassAutoplayPolicies,NTPArticleSuggestions,NetworkTimeServiceQuerying,NotificationTriggers,OmniboxTriggerForNoStatePrefetch,OptimizationHints,OptimizationHintsFetching,OptimizationHintsFetchingAnonymousDataConsent,OptimizationHintsFieldTrials,Parakeet,Prerender2,PrefersColorSchemeClientHintHeader,PreloadMediaEngagementData,ReportAllJavaScriptFrameworks,Reporting,SegmentationPlatform,SignedExchangeReportingForDistributors,SpeculationRulesPrefetchProxy,SubresourceWebBundles,TabMetricsLogging,TextFragmentAnchor,UACHPlatformEnabledByDefault,UserAgentClientHint,UserAgentClientHintFullVersionList,ViewportHeightClientHintHeader,WebNFC,WebSQLInThirdPartyContextEnabled,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation" --connectivity-check-url="0.0.0.0" --crash-server-url="0.0.0.0" --gaia-url="0.0.0.0" --gcm-checkin-url="0.0.0.0" --gcm-mcs-endpoint="0.0.0.0" --gcm-registration-url="0.0.0.0" --google-apis-url="0.0.0.0" --google-base-url="0.0.0.0" --google-doodle-url="0.0.0.0" --lso-url="0.0.0.0" --oauth-account-manager-url="0.0.0.0" --override-metrics-upload-url="0.0.0.0" --realtime-reporting-url="0.0.0.0" --sync-url="0.0.0.0" --url="0.0.0.0" --variations-server-url="0.0.0.0" --cipher-suite-blacklist="0xc013,0xc014,0x009c,0x009d,0x002f,0x0035" --enable-strict-mixed-content-checking --js-flags="--jitless,--noexpose_wasm" --blink-settings="dnsPrefetchingEnabled=false,preferredColorScheme=1,strictMixedContentChecking=true,strictMixedContentCheckingForPlugin=true,strictlyBlockBlockableMixedContent=true" --disable-blink-features="PrefersContrast,GravitySensor" --isolation-by-default
+--block-new-web-contents --disable-background-networking --disable-breakpad --disable-composited-antialiasing --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-external-intent-requests --disable-file-system --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --gpu-rasterization-msaa-sample-count=0 --lite-video-force-override-decision --no-pings --num-raster-threads=4 --process-per-site --site-per-process --time-zone-for-testing=UTC --use-fake-device-for-media-stream --enable-features="BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,BrowserDynamicCodeDisabled,DisableProcessReuse,EnableCsrssLockdown,EncryptedClientHello,GpuAppContainer,ImprovedCookieControlsIsolateOrigins,IsolatePrerenders,IsolateSandboxedIframes,MinimizeAudioProcessingForUnusedOutput,NetworkServiceSandbox,NetworkServiceCodeIntegrity,OpaqueResponseBlockingV01,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PartitionedCookies,PrefetchPrivacyChanges,ReduceUserAgent,ReducedReferrerGranularity,RendererAppContainer,RestrictGamepadAccess,SandboxExternalProtocolBlocked,SandboxHttpCache,SplitAuthCacheByNetworkIsolationKey,SplitCacheByIncludeCredentials,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,SuppressDifferentOriginSubframeJSDialogs,ThirdPartyStoragePartitioning,UseRegistrableDomainInNetworkIsolationKey,WinSboxDisableExtensionPoint,WinSboxDisableKtmComponent" --disable-features="AcceptCHFrame,AdInterestGroupAPI,AllowClientHintsToThirdParty,AllowURNsInIframes,AppActivityReporting,AppDiscoveryRemoteUrlSearch,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,ClearCrossSiteCrossBrowsingContextGroupWindowName,ClientHintThirdPartyDelegation,ClientHintsDPR,ClientHintsDPR_DEPRECATED,ClientHintsDeviceMemory,ClientHintsDeviceMemory_DEPRECATED,ClientHintsMetaHTTPEquivAcceptCH,ClientHintsMetaNameAcceptCH,ClientHintsResourceWidth,ClientHintsResourceWidth_DEPRECATED,ClientHintsViewportWidth,ClientHintsViewportWidth_DEPRECATED,ComputePressure,ContextMenuPerformanceInfoAndRemoteHintFetching,ConversionMeasurement,CopyLinkToText,CrashReporting,CriticalClientHint,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,CssSelectorFragmentAnchor,DirectSockets,DocumentReporting,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableStructuredMetrics,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,ExperimentalJSProfiler,FederatedLearningOfCohorts,Fledge,FlocIdComputedEventLogging,FontAccess,FontAccessPersistent,GreaseUACH,HandwritingRecognitionWebPlatformApiFinch,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,InterestGroupStorage,MediaDrmPreprovisioning,MediaEngagementBypassAutoplayPolicies,NTPArticleSuggestions,NetworkTimeServiceQuerying,NotificationTriggers,OmniboxTriggerForNoStatePrefetch,OptimizationHints,OptimizationHintsFetching,OptimizationHintsFetchingAnonymousDataConsent,OptimizationHintsFieldTrials,Parakeet,Prerender2,PrefersColorSchemeClientHintHeader,PreloadMediaEngagementData,ReportAllJavaScriptFrameworks,Reporting,SegmentationPlatform,SignedExchangeReportingForDistributors,SpeculationRulesPrefetchProxy,SubresourceWebBundles,TabMetricsLogging,TextFragmentAnchor,SafeBrowsingBetterTelemetryAcrossReports,UACHPlatformEnabledByDefault,UserAgentClientHint,UserAgentClientHintFullVersionList,ViewportHeightClientHintHeader,WebNFC,WebSQLInThirdPartyContextEnabled,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation" --connectivity-check-url=0.0.0.0 --crash-server-url=0.0.0.0 --gaia-url=0.0.0.0 --gcm-checkin-url=0.0.0.0 --gcm-mcs-endpoint=0.0.0.0 --gcm-registration-url=0.0.0.0 --google-apis-url=0.0.0.0 --google-base-url=0.0.0.0 --google-doodle-url=0.0.0.0 --lso-url=0.0.0.0 --oauth-account-manager-url=0.0.0.0 --override-metrics-upload-url=0.0.0.0 --realtime-reporting-url=0.0.0.0 --reporting-connector-url=0.0.0.0 --sync-url=0.0.0.0 --url=0.0.0.0 --variations-server-url=0.0.0.0 --variations-insecure-server-url=0.0.0.0 --cipher-suite-blacklist="0xc013,0xc014,0x009c,0x009d,0x002f,0x0035" --enable-strict-mixed-content-checking --js-flags="--jitless,--noexpose_wasm" --blink-settings="dnsPrefetchingEnabled=false,preferredColorScheme=1,strictMixedContentChecking=true,strictMixedContentCheckingForPlugin=true,strictlyBlockBlockableMixedContent=true" --disable-blink-features="PrefersContrast,GravitySensor" --isolation-by-default
+```
+
+For MS Edge:
+```
+--block-new-web-contents --disable-background-networking --disable-breakpad --disable-composited-antialiasing --disable-crash-reporter --disable-default-apps --disable-domain-reliability --disable-external-intent-requests --disable-file-system --disable-webgl --extension-content-verification=enforce_strict --extensions-install-verification=enforce --gpu-rasterization-msaa-sample-count=0 --lite-video-force-override-decision --no-pings --num-raster-threads=4 --process-per-site --site-per-process --time-zone-for-testing=UTC --use-fake-device-for-media-stream --enable-features="msDataWithUrlsForceOff,msDiagnosticDataForceOff,msPerformanceModeToggle,BlockInsecurePrivateNetworkRequests,BlockInsecurePrivateNetworkRequestsForNavigations,BrowserDynamicCodeDisabled,DisableProcessReuse,EnableCsrssLockdown,EncryptedClientHello,GpuAppContainer,ImprovedCookieControlsIsolateOrigins,IsolatePrerenders,IsolateSandboxedIframes,MinimizeAudioProcessingForUnusedOutput,NetworkServiceSandbox,NetworkServiceCodeIntegrity,OpaqueResponseBlockingV01,OriginIsolationHeader,PartitionConnectionsByNetworkIsolationKey,PartitionDomainReliabilityByNetworkIsolationKey,PartitionExpectCTStateByNetworkIsolationKey,PartitionHttpServerPropertiesByNetworkIsolationKey,PartitionNelAndReportingByNetworkIsolationKey,PartitionSSLSessionsByNetworkIsolationKey,PartitionedCookies,PrefetchPrivacyChanges,ReduceUserAgent,ReducedReferrerGranularity,RendererAppContainer,RestrictGamepadAccess,SandboxExternalProtocolBlocked,SandboxHttpCache,SplitAuthCacheByNetworkIsolationKey,SplitCacheByIncludeCredentials,SplitCacheByNetworkIsolationKey,SplitHostCacheByNetworkIsolationKey,StrictOriginIsolation,SuppressDifferentOriginSubframeJSDialogs,ThirdPartyStoragePartitioning,UseRegistrableDomainInNetworkIsolationKey,WinSboxDisableExtensionPoint,WinSboxDisableKtmComponent" --disable-features="SendBingSERPTelemetry,SendBingTelemetry,msEdge3PTelemetry,msEdgeCitations,msEdgeFeedbackSupport,msEdgeHJSendBeaconTelemetry,msEdgeHJTelemetry,msEdgeMathHelper,msEdgeQBox,msEdgeSanTelemetry,msEnableMATSTelemetry,msEnableWAMMATSTelemetry,msODSPTelemetry,msOfficeTelemetryBase,msReadAloud,msSendDataDiagnosticTelemetry,msUseSETTelemetryService,AcceptCHFrame,AdInterestGroupAPI,AllowClientHintsToThirdParty,AllowURNsInIframes,AppActivityReporting,AppDiscoveryRemoteUrlSearch,AutofillEnableAccountWalletStorage,AutofillServerCommunication,AutoupgradeMixedContent,ClearCrossSiteCrossBrowsingContextGroupWindowName,ClientHintThirdPartyDelegation,ClientHintsDPR,ClientHintsDPR_DEPRECATED,ClientHintsDeviceMemory,ClientHintsDeviceMemory_DEPRECATED,ClientHintsMetaHTTPEquivAcceptCH,ClientHintsMetaNameAcceptCH,ClientHintsResourceWidth,ClientHintsResourceWidth_DEPRECATED,ClientHintsViewportWidth,ClientHintsViewportWidth_DEPRECATED,ComputePressure,ContextMenuPerformanceInfoAndRemoteHintFetching,ConversionMeasurement,CopyLinkToText,CrashReporting,CriticalClientHint,CrossOriginOpenerPolicyAccessReporting,CrossOriginOpenerPolicyReporting,CrossOriginOpenerPolicyReportingOriginTrial,CrostiniAdditionalEnterpriseReporting,CssSelectorFragmentAnchor,DirectSockets,DocumentReporting,EnableSignedExchangePrefetchCacheForNavigations,EnableSignedExchangeSubresourcePrefetch,EnableStructuredMetrics,EnableSubresourceWebBundles,EnterpriseRealtimeExtensionRequest,EventBasedStatusReporting,ExpectCTReporting,ExperimentalJSProfiler,FederatedLearningOfCohorts,Fledge,FlocIdComputedEventLogging,FontAccess,FontAccessPersistent,GreaseUACH,HandwritingRecognitionWebPlatformApiFinch,IdleDetection,InterestCohortAPIOriginTrial,InterestCohortFeaturePolicy,InterestGroupStorage,MediaDrmPreprovisioning,MediaEngagementBypassAutoplayPolicies,NTPArticleSuggestions,NetworkTimeServiceQuerying,NotificationTriggers,OmniboxTriggerForNoStatePrefetch,OptimizationHints,OptimizationHintsFetching,OptimizationHintsFetchingAnonymousDataConsent,OptimizationHintsFieldTrials,Parakeet,Prerender2,PrefersColorSchemeClientHintHeader,PreloadMediaEngagementData,ReportAllJavaScriptFrameworks,Reporting,SegmentationPlatform,SignedExchangeReportingForDistributors,SpeculationRulesPrefetchProxy,SubresourceWebBundles,TabMetricsLogging,TextFragmentAnchor,SafeBrowsingBetterTelemetryAcrossReports,UACHPlatformEnabledByDefault,UserAgentClientHint,UserAgentClientHintFullVersionList,ViewportHeightClientHintHeader,WebNFC,WebSQLInThirdPartyContextEnabled,WebXR,WinrtGeolocationImplementation,WinrtSensorsImplementation" --connectivity-check-url=0.0.0.0 --crash-server-url=0.0.0.0 --gaia-url=0.0.0.0 --gcm-checkin-url=0.0.0.0 --gcm-mcs-endpoint=0.0.0.0 --gcm-registration-url=0.0.0.0 --google-apis-url=0.0.0.0 --google-base-url=0.0.0.0 --google-doodle-url=0.0.0.0 --lso-url=0.0.0.0 --oauth-account-manager-url=0.0.0.0 --override-metrics-upload-url=0.0.0.0 --realtime-reporting-url=0.0.0.0 --reporting-connector-url=0.0.0.0 --sync-url=0.0.0.0 --url=0.0.0.0 --variations-server-url=0.0.0.0 --variations-insecure-server-url=0.0.0.0 --bing-base-url=0.0.0.0 --edge-mobile-upsell-service-url=0.0.0.0 --edge-wns-push-server-url=0.0.0.0 --state-label-predictor-model-url=0.0.0.0 --cipher-suite-blacklist="0xc013,0xc014,0x009c,0x009d,0x002f,0x0035" --enable-strict-mixed-content-checking --js-flags="--jitless,--noexpose_wasm" --blink-settings="dnsPrefetchingEnabled=false,preferredColorScheme=1,strictMixedContentChecking=true,strictMixedContentCheckingForPlugin=true,strictlyBlockBlockableMixedContent=true" --disable-blink-features="PrefersContrast,GravitySensor" --isolation-by-default
 ```
 
 Triple click to select the entire line.
@@ -11,7 +17,7 @@ Triple click to select the entire line.
 | Name | Description |
 | :--- | :---------- |
 | --disable-frame-rate-limit | Disables frame rate limiting |
-| --enable-low-end-device-mode | Forces low-end device mode <br> Reduces memory usage a lot and also quaility of videos |
+| --enable-low-end-device-mode | Forces low-end device mode <br> Reduces memory usage a lot and quaility of images. Not recommended on Android if strict isolation is enabled |
 | --user-agent="useragent" | A string used to override the default user agent with a custom one |
 | --use-mobile-user-agent | Forces mobile user agent |
 </p></details>
@@ -30,11 +36,12 @@ Triple click to select the entire line.
 | --disable-default-apps | Disables installation of default apps |
 | --disable-domain-reliability | Disables Domain Reliability Monitoring |
 | --disable-external-intent-requests | Never forward URL requests to external intents |
+| --disable-file-system | Disables FileSystem API |
 | --disable-webgl | Disables WebGL |
 | --enable-strict-mixed-content-checking | Blocks passive and active mixed content <br> (AutoupgradeMixedContent must be disabled) |
 | --extension-content-verification | Extensions verification |
 | --extensions-install-verification | Extensions verification |
-| --gpu-rasterization-msaa-sample-count | Numbers of multisample antialiasing samples for GPU rasterization <br> are based on DPI for desktops <br> For Android it's 4. 0 disables MSAA which helps to improve performance |
+| --gpu-rasterization-msaa-sample-count | Numbers of multisample antialiasing samples for GPU rasterization <br> are based on DPI for desktops <br> Android uses 4 by default. Using 0 disables MSAA and improves performance |
 | --isolation-by-default | Change several web APIs that make it difficult to isolate origins into distinct processes |
 | --js-flags=--jitless | Enables running V8 in JITless mode. [More Information](https://v8.dev/blog/jitless) |
 | --js-flags=--noexpose_wasm | Disables WebAssembly |
@@ -51,6 +58,7 @@ Triple click to select the entire line.
 Isolation:
 * IsolateOrigins
 * IsolatePrerenders
+* IsolateSandboxedIframes
 * OriginIsolationHeader
 * PartitionConnectionsByNetworkIsolationKey
 * PartitionDomainReliabilityByNetworkIsolationKey
@@ -59,14 +67,13 @@ Isolation:
 * PartitionNelAndReportingByNetworkIsolationKey
 * PartitionSSLSessionsByNetworkIsolationKey
 * PartitionedCookies
+* SandboxHttpCache
 * SplitAuthCacheByNetworkIsolationKey
 * SplitCacheByIncludeCredentials
 * SplitCacheByNetworkIsolationKey
 * SplitHostCacheByNetworkIsolationKey
 * StrictOriginIsolation
 * UseRegistrableDomainInNetworkIsolationKey
-* WebAppEnableIsolatedStorage
-	* Enables web apps to request isolated storage
 	
 Sandboxing:
 * BrowserDynamicCodeDisabled
@@ -92,6 +99,8 @@ Privacy & Security:
 * EncryptedClientHello
 * ImprovedCookieControls
 	* Improved third-party cookie blocking/control
+* OpaqueResponseBlockingV01
+	* [Documentation](https://docs.google.com/document/d/1qUbE2ySi6av3arUEw5DNdFJIKKBbWGRGsXz_ew3S7HQ)
 * PrefetchPrivacyChanges
 	* Prefetch requests will not follow redirects, not send a Referer header, not send credentials for cross-origin requests, and do not pass through service workers
 * ReducedReferrerGranularity
@@ -100,8 +109,6 @@ Privacy & Security:
 Performance:
 * MinimizeAudioProcessingForUnusedOutput
 	* Reduces CPU load when all audio tracks are disabled
-* msPerformanceModeToggle
-	* Exposes `Turn on efficiency mode` in `edge://settings/system and don't forget to enabled it
 
 Others:
 * RestrictGamepadAccess
@@ -128,6 +135,7 @@ Reporting:
 * ExpectCTReporting
 * ReportAllJavaScriptFrameworks
 * Reporting
+* SafeBrowsingBetterTelemetryAcrossReports
 * TabMetricsLogging
 
 Autofill:
@@ -216,10 +224,35 @@ Others:
 	* Blocks Sensors implementation
 </p></details>
 
+<details><summary>MS Edge specific feature flags</summary><p>
+
+As Microsoft Edge isn't an open-source browser, there is no way to look up for `blink::features` or other types of flags. Fortunetaly, we can search memory strings, which exposes lots of undocumented flags, but using them might be dangerous and at the same time beneficial.
+
+Enabled:
+* msDataWithUrlsForceOff,msDiagnosticDataForceOff
+	* Enabling them forces Edge to not send diagnostic data
+* msPerformanceModeToggle
+	* Exposes [`Turn on efficiency mode`](https://techcommunity.microsoft.com/t5/discussions/introducing-performance-mode-in-microsoft-edge-new-feature/td-p/2270856) in `edge://settings/system and don't forget to enable it
+
+Disabled:
+* SendBingSERPTelemetry, SendBingTelemetry, msEdge3PTelemetry, msEdgeHJSendBeaconTelemetry, msEdgeHJTelemetry, msEdgeSanTelemetry, msEnableMATSTelemetry, msEnableWAMMATSTelemetry, msODSPTelemetry, msOfficeTelemetryBase, msSendDataDiagnosticTelemetry, msUseSETTelemetryService
+	* Undocumented telemetry features
+* msEdgeCitations
+	* Disables Citations
+* msEdgeFeedbackSupport
+* msEdgeMathHelper
+	* Disables Math Helper
+* msEdgeQBox
+	* Bing Related
+* msReadAloud
+	* Disables Read aloud
+</p></details>
+
 <details><summary>URL</summary><p>
 
 | Name | Description |
 | :--- | :---------- |
+| --component-updater=url-source | Downloads additional components |
 | --connectivity-check-url | Used for Network connectivity checking |
 | --crash-server-url| Crash server |
 | --gaia-url | GAIA related |
@@ -233,10 +266,19 @@ Others:
 | --oauth-account-manager-url | GAIA related |
 | --override-metrics-upload-url | Metrics upload |
 | --realtime-reporting-url | Realtime reporting |
+| --reporting-connector-url | Used for Reporting service |
 | --sync-url | Used for sync |
 | --url | Used for crash reports |
+| --variations-insecure-server-url | Reports variation data |
 | --variations-server-url | Reports variation data |
-| --component-updater=url-source | Downloads additional components |
+
+MS Edge specific URLs:
+| Name | Description |
+| :--- | :---------- |
+| --bing-base-url | Bing related, similar to `google-base-url` |
+| --edge-mobile-upsell-service-url | Unknown |
+| --edge-wns-push-server-url | Windows Push Notification service |
+| --state-label-predictor-model-url | Autofill |
 </p></details>
 
 <details><summary>Blink</summary><p>
@@ -297,10 +339,6 @@ Remove `--isolation-by-default`
 
 Remove `0x002f` from `--cipher-suite-blacklist`
 
-#### Crashes when downloading a file
-
-Remove `WebAppEnableIsolatedStorage` from `--enable-features`
-
 #### Microphone and camera do not work
 
 Remove `--use-fake-device-for-media-stream`
@@ -315,4 +353,4 @@ Remove `RendererAppContainer` from `--enable-features`
 
 > --component-updater=url-source="0.0.0.0"
 
-I do not recommend to use it, because it is needed for up-to-date components (chrome://components), like CRLSets, native adblocker rules. However, the browser still can be usable if your goal is to reduce internet traffics.
+Not recommend to use it, because it completely disables components updating (chrome://components), like CRLSets, SafetyTips, native adblocker rules (The switch does not affect regular extensions), etc. However, the browser still can be usable if your goal is to reduce internet traffics.
