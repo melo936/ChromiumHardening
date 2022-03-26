@@ -94,7 +94,7 @@ In order to modify flags, you must access `chrome://flags`
 	* This flag is enabled by default on some/most devices
 	* If you don't experience the same problem, keep this flag default
 * #enable-webassembly-lazy-compilation
-	* This flag is placebo when JITLess mode or `#edge-enable-super-duper-secure-mode` are enabled 
+	* This flag is placebo when JITLess mode and Strict Security mode in MS Edge are activated
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
 	* Use this flag for Skylake or newer
 * #subframe-shutdown-delay
@@ -104,7 +104,7 @@ In order to modify flags, you must access `chrome://flags`
 
 **These flags are not intented for every device, but worth testing.**
 
-Forcing them might be a bad idea. Therefore, before using them, please check out Problems section by typing `chrome://gpu` into the address bar (ignore WebGL errors)
+Forcing them might be a bad idea. Therefore, before using them, please check out the Problems section by typing `chrome://gpu` into the address bar (ignore WebGL errors)
 
 * #enable-accelerated-video-decode
 	* Enabled by default on Windows (probably on MacOS, too), yet not on Linux.
