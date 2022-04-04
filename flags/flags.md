@@ -13,7 +13,7 @@ In order to modify flags, you must access `chrome://flags`
 * #disallow-doc-written-script-loads
 	* Enabling it breaks `--blink-settings="preferredColorScheme=1"`
 	* If you use Brave Browser with Fingerprinting blocking Strict, just enable the flag
-* #enable-browsing-data-lifetime-manager
+* #enable-isolated-sandboxed-iframes
 * #enable-web-bluetooth-new-permissions-backend
 	* Go to `chrome://settings/content/bluetoothDevices` and disable the permission
 	* On Android, Go to Settings → Site Settings → Bluetooth → disable the permission
@@ -33,13 +33,12 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-prerender2
 * #enable-tls13-early-data
 * #enable-webrtc-remote-event-log
+* #enable-webusb-device-detection
 * #enable-winrt-geolocation-implementation
 	* You might need to enable it for Maps
-* #enterprise-reporting-extension-manifest-version
-* #fedcm
 * #file-handling-api
 * #font-access
-* #happiness-tracking-surveys-for-desktop-demo
+* #full-user-agent
 * #hardware-media-key-handling
 * #media-router-cast-allow-all-ips
 * #sameparty-cookies-considered-first-party
@@ -55,6 +54,8 @@ In order to modify flags, you must access `chrome://flags`
 
 <details><summary>Enabled</summary><p>
 
+* #download-bubble
+	* If you prefer MS Edge's download bubble style, then enable it, yet it might not be stable
 * #enable-force-dark
 	* Personal preference
 * #enable-reader-mode
@@ -65,8 +66,6 @@ In order to modify flags, you must access `chrome://flags`
 * #sharing-desktop-screenshots-edit
 * #side-panel
 * #unified-side-panel
-* #webui-branding-update
-	* Causes UI issues with Brave's settings
 </p></details>
 
 <details><summary>Disabled</summary><p>
@@ -99,16 +98,11 @@ In order to modify flags, you must access `chrome://flags`
 	* Use this flag for Skylake or newer
 * #subframe-shutdown-delay
 * #throttle-foreground-timers
-* #turn-off-streaming-media-caching-always
-* #turn-off-streaming-media-caching-on-battery
 
 **These flags are not intented for every device, but worth testing.**
 
 Forcing them might be a bad idea. Therefore, before using them, please check out the Problems section by typing `chrome://gpu` into the address bar (ignore WebGL errors)
 
-* #enable-accelerated-video-decode
-	* Enabled by default on Windows (probably on MacOS, too), yet not on Linux.
-	* Use ``chrome://media-iternals`` to verify if you are actually getting hardware accelerated video decoding or not. [Read more](https://teddit.net/r/linux/comments/k5s4n5/google_chrome_v88_got_hardwareaccelerated/gehwpak/)
 * #enable-gpu-rasterization
 * #enable-zero-copy
 * #ignore-gpu-blocklist
@@ -132,7 +126,6 @@ Forcing them might be a bad idea. Therefore, before using them, please check out
 
 * #contextual-search-longpress-resolve - **Disabled**
 * #related-searches - **Disabled**
-* #xsurface-metrics-reporting - **Disabled**
 </p></details>
 
 ## Special flags for Chromium forks
@@ -146,8 +139,8 @@ These flags are from Nightly builds, some of them might not be available in othe
 * #brave-adblock-cosmetic-filtering - **Enabled**
 * #brave-adblock-csp-rules - **Enabled**
 * #brave-adblock-default-1p-blocking - **Enabled**
-* #brave-adblock-redirect-url - **Enabled**
 * #brave-dark-mode-block - **Enabled**
+* #brave-de-amp - **Enabled**
 * #brave-debounce - **Enabled**
 * #brave-domain-block - **Enabled**
 * #brave-domain-block-1pes - **Enabled**
@@ -155,9 +148,9 @@ These flags are from Nightly builds, some of them might not be available in othe
 * #brave-ephemeral-storage-keep-alive - **Enabled**
 * #brave-extension-network-blocking - **Enabled**
 * #brave-first-party-ephemeral-storage - **Enabled**
+* #brave-reduce-language - **Enabled**
 * #brave-speedreader - **Enabled**
 * #restrict-websockets-pool - **Enabled**
-* #sidebar - **Enabled**
 </p></details>
 
 <details><summary>Ungoogled Chromium</summary><p>
@@ -193,6 +186,7 @@ These flags are from Nightly builds, some of them might not be available in othe
 * #edge-sdsm-emulate-acg - **Enabled**
 * #edge-show-feature-recommendations - **Disabled**
 * #edge-toast-winrt - **Disabled**
+* #edge-wdag-optional-network-isolation - **Enabled**
 * #edge-widevine-drm - **Disabled**
 	* Needed for Netflix, Spotify, etc.
 </p></details>
