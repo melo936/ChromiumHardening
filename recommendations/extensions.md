@@ -6,9 +6,7 @@ My biggest recommendation is to avoid extensions as much as you can.
 * [Redirector](https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd) - Automatically redirects content based on user-defined rules
 
 ### Fingerprinting
-(These) Extensions do not/cannot guarantee 100% protection, due to revoked access to workers (which causes leakage). They may be vulnerable when `ToString()` is requested.
+Extensions do not/cannot guarantee 100% protection, due to revoked access to workers (which causes leakage). They may be vulnerable when `ToString()` is requested.
 
-* [Canvas Fingerprint Defender](https://chrome.google.com/webstore/detail/canvas-fingerprint-defend/lanfdkkpgfjfdikkncbnojekcppdebfp) - Defending against canvas fingerprinting by reporting a fake value
-	* Do not use it in Brave Browser and Ungoogled Chromium
-* [AudioContext Fingerprint Defender](https://chrome.google.com/webstore/detail/audiocontext-fingerprint/pcbjiidheaempljdefbdplebgdgpjcbe) - Defending against AudioContext fingerprinting by reporting a fake value
-	* Do not use it in Brave Browser
+* [Jshelter](https://chrome.google.com/webstore/detail/jshelter/ammoloihpcbognfddfjcljgembpibcmb) - Defends against all types of Fingerprinting.
+	*Do not use it in Brave Browser and Ungoogled Chromium
