@@ -21,17 +21,16 @@ In order to modify flags, you must access `chrome://flags`
 * #force-effective-connection-type - **Slow 2G**
 * #isolate-origins
 * #partitioned-cookies
-* #post-quantum-cecpq2
 * #reduce-user-agent
 * #strict-origin-isolation
 </p></details>
 
 <details><summary>Disabled:</summary><p>
 
+* #enable-fenced-frames
 * #enable-first-party-sets
 * #enable-generic-sensor-extra-classes
 * #enable-prerender2
-* #enable-tls13-early-data
 * #enable-webrtc-remote-event-log
 * #enable-webusb-device-detection
 * #enable-winrt-geolocation-implementation
@@ -39,7 +38,6 @@ In order to modify flags, you must access `chrome://flags`
 * #file-handling-api
 * #font-access
 * #full-user-agent
-* #hardware-media-key-handling
 * #media-router-cast-allow-all-ips
 * #sameparty-cookies-considered-first-party
 * #show-autofill-type-predictions
@@ -48,6 +46,7 @@ In order to modify flags, you must access `chrome://flags`
 * #use-first-party-set
 * #web-bundles
 * #web-share
+* #web-sql-access
 </p></details>
 
 ## Usability
@@ -58,13 +57,15 @@ In order to modify flags, you must access `chrome://flags`
 	* If you prefer MS Edge's download bubble style, then enable it, yet it might not be stable
 * #enable-force-dark
 	* Personal preference
-* #enable-reader-mode
+* #enable-tab-audio-muting
 * #extensions-menu-access-control
 * #global-media-controls-modern-ui
 * #scrollable-tabstrip
 * #sharing-desktop-screenshots
 * #sharing-desktop-screenshots-edit
 * #side-panel
+* #side-panel-drag-and-drop
+* #side-panel-improved-clobbering
 * #unified-side-panel
 </p></details>
 
@@ -86,7 +87,6 @@ In order to modify flags, you must access `chrome://flags`
 * #back-forward-cache - **Enabled force caching all pages (experimntal)**
 	* Make sure you are using command line flags
 * #enable-parallel-downloading
-* #enable-skia-renderer
 * #enable-quic
 * #enable-throttle-display-none-and-visibility-hidden-cross-origin-iframes
 * #enable-vulkan - Disabled, due to causing completely black web pages and making browsers laggy
@@ -98,6 +98,7 @@ In order to modify flags, you must access `chrome://flags`
 	* Use this flag for Skylake or newer
 * #subframe-shutdown-delay
 * #throttle-foreground-timers
+* #unthrottled-nested-timeout
 
 **These flags are not intented for every device, but worth testing.**
 
