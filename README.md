@@ -1,15 +1,24 @@
 # Chromium Hardening
-The goal of this project is to set up Chromium based browsers for better privacy, security, usability and performance.
+The goal of this guide is to set up Chromium based browsers for better privacy, security, usability and performance.
 
 ## Disclaimer
 I am not responsible for any direct or indirect consequences/damage resulting from their use!
 
 ## Features
-* Less (or no) home calling
-* Privacy & security improvements
-* Better performance
-	* CPU and RAM usage might be increased due to isolation
-* Strictly block mixed active and passive content
+* No/reduced home calling
+* Privacy improvments
+	* Network-State partitioning system
+	* User-Agent, Color Scheme (to light), Media Devices native spoofing methods
+	* Client Hints, Sensors, Idle Detection, FLoC, Reporting and many other privacy harming features blocked
+	* Encrypted Client Hello enabled, previously known as Encrypted SNI
+* Security improvments (mostly for Windows)
+	* JITLess mode
+	* GPU, Renderer and Network services in AppContainers
+	* ACG and CIG mitigations in the renderer and network processes
+	* Csrss lockdown
+* Better performance & resource saving
+	* Ameliorated caching and throttling system
+	* Parallel downloading
 * Better browsing usability without sacrificing privacy
 
 ## Let's start

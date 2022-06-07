@@ -7,6 +7,8 @@ In order to modify flags, you must access `chrome://flags`
 <details><summary>Enabled:</summary><p>
 
 * #block-insecure-private-network-requests
+* #certificate-transparency-2022-policy
+* #certificate-transparency-2022-policy-all-certs
 * #disable-process-reuse
 	* When enabled, out-of-process iframes will not try to reuse compatible processes from unrelated tabs, which might decrease performance. 
 	* The flag is force-enabled in command-line flags, due to it is hidden in MS Edge(://flags)
@@ -18,7 +20,6 @@ In order to modify flags, you must access `chrome://flags`
 	* Go to `chrome://settings/content/bluetoothDevices` and disable the permission
 	* On Android, Go to Settings → Site Settings → Bluetooth → disable the permission
 * #enable-webrtc-hide-local-ips-with-mdns
-* #force-effective-connection-type - **Slow 2G**
 * #isolate-origins
 * #partitioned-cookies
 * #reduce-user-agent
@@ -63,9 +64,9 @@ In order to modify flags, you must access `chrome://flags`
 * #scrollable-tabstrip
 * #sharing-desktop-screenshots
 * #sharing-desktop-screenshots-edit
-* #side-panel
-* #side-panel-drag-and-drop
 * #side-panel-improved-clobbering
+* #smooth-scrolling
+	* Personal preference
 * #unified-side-panel
 </p></details>
 
@@ -73,11 +74,7 @@ In order to modify flags, you must access `chrome://flags`
 
 * #in-product-help-demo-mode-choice
 * #in-product-help-snooze
-* #smooth-scrolling
-	* Personal preference
-* #username-first-flow
 * #username-first-flow-fallback-crowdsourcing
-* #username-first-flow-filling
 </p></details>
 
 ## Performance
@@ -86,6 +83,7 @@ In order to modify flags, you must access `chrome://flags`
 
 * #back-forward-cache - **Enabled force caching all pages (experimntal)**
 	* Make sure you are using command line flags
+* #calculate-native-win-occlusion
 * #enable-parallel-downloading
 * #enable-quic
 * #enable-throttle-display-none-and-visibility-hidden-cross-origin-iframes
@@ -93,7 +91,7 @@ In order to modify flags, you must access `chrome://flags`
 	* This flag is enabled by default on some/most devices
 	* If you don't experience the same problem, keep this flag default
 * #enable-webassembly-lazy-compilation
-	* This flag is placebo when JITLess mode and Strict Security mode in MS Edge are activated
+	* This flag is placebo when JITLess mode and/or Strict Security mode in MS Edge are activated
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
 	* Use this flag for Skylake or newer
 * #subframe-shutdown-delay
