@@ -7,14 +7,13 @@ In order to modify flags, you must access `chrome://flags`
 <details><summary>Enabled:</summary><p>
 
 * #block-insecure-private-network-requests
-* #certificate-transparency-2022-policy
-* #certificate-transparency-2022-policy-all-certs
 * #disable-process-reuse
 	* When enabled, out-of-process iframes will not try to reuse compatible processes from unrelated tabs, which might decrease performance. 
 	* The flag is force-enabled in command-line flags, due to it is hidden in MS Edge(://flags)
 * #disallow-doc-written-script-loads
 	* Enabling it breaks `--blink-settings="preferredColorScheme=1"`
 	* If you use Brave Browser with Fingerprinting blocking Strict, just enable the flag
+* #enable-browsing-data-lifetime-manager
 * #enable-isolated-sandboxed-iframes
 * #enable-web-bluetooth-new-permissions-backend
 	* Go to `chrome://settings/content/bluetoothDevices` and disable the permission
@@ -73,7 +72,8 @@ In order to modify flags, you must access `chrome://flags`
 <details><summary>Disabled</summary><p>
 
 * #in-product-help-demo-mode-choice
-* #in-product-help-snooze
+* #username-first-flow
+* #username-first-flow-filling
 * #username-first-flow-fallback-crowdsourcing
 </p></details>
 
@@ -94,8 +94,6 @@ In order to modify flags, you must access `chrome://flags`
 	* This flag is placebo when JITLess mode and/or Strict Security mode in MS Edge are activated
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
 	* Use this flag for Skylake or newer
-* #subframe-shutdown-delay
-* #throttle-foreground-timers
 * #unthrottled-nested-timeout
 
 **These flags are not intented for every device, but worth testing.**
