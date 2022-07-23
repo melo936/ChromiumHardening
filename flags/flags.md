@@ -84,6 +84,7 @@ In order to modify flags, you must access `chrome://flags`
 * #back-forward-cache - **Enabled force caching all pages (experimntal)**
 	* Make sure you are using command line flags
 * #calculate-native-win-occlusion
+* #enable-drdc
 * #enable-parallel-downloading
 * #enable-quic
 * #enable-throttle-display-none-and-visibility-hidden-cross-origin-iframes
