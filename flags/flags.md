@@ -7,6 +7,7 @@ In order to modify flags, you must access `chrome://flags`
 <details><summary>Enabled:</summary><p>
 
 * #block-insecure-private-network-requests
+* #clear-cross-site-cross-browsing-context-group-window-name
 * #disable-process-reuse
 	* When enabled, out-of-process iframes will not try to reuse compatible processes from unrelated tabs, which might decrease performance. 
 	* The flag is force-enabled in command-line flags, due to it is hidden in MS Edge(://flags)
@@ -19,6 +20,7 @@ In order to modify flags, you must access `chrome://flags`
 	* Go to `chrome://settings/content/bluetoothDevices` and disable the permission
 	* On Android, Go to Settings → Site Settings → Bluetooth → disable the permission
 * #enable-webrtc-hide-local-ips-with-mdns
+* #enable-webview-tag-site-isolation
 * #isolate-origins
 * #partitioned-cookies
 * #reduce-user-agent
@@ -27,6 +29,7 @@ In order to modify flags, you must access `chrome://flags`
 
 <details><summary>Disabled:</summary><p>
 
+* #enable-async-dns
 * #enable-fenced-frames
 * #enable-first-party-sets
 * #enable-generic-sensor-extra-classes
@@ -64,17 +67,16 @@ In order to modify flags, you must access `chrome://flags`
 * #sharing-desktop-screenshots
 * #sharing-desktop-screenshots-edit
 * #side-panel-improved-clobbering
-* #smooth-scrolling
-	* Personal preference
 * #unified-side-panel
 </p></details>
 
 <details><summary>Disabled</summary><p>
 
 * #in-product-help-demo-mode-choice
+* #smooth-scrolling
 * #username-first-flow
-* #username-first-flow-filling
 * #username-first-flow-fallback-crowdsourcing
+* #username-first-flow-filling
 </p></details>
 
 ## Performance
@@ -95,6 +97,7 @@ In order to modify flags, you must access `chrome://flags`
 	* This flag is placebo when JITLess mode and/or Strict Security mode in MS Edge are activated
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
 	* Use this flag for Skylake or newer
+* #subframe-shutdown-delay
 * #unthrottled-nested-timeout
 
 **These flags are not intented for every device, but worth testing.**

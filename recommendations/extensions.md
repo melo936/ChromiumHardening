@@ -9,4 +9,4 @@ My biggest recommendation is to avoid extensions as much as you can.
 Extensions do not/cannot guarantee 100% protection, due to revoked access to workers (which causes leakage). They may be vulnerable when `ToString()` is requested.
 
 * [Jshelter](https://chrome.google.com/webstore/detail/jshelter/ammoloihpcbognfddfjcljgembpibcmb) - Defends against all types of Fingerprinting.
-	*Do not use it in Brave Browser and Ungoogled Chromium
+	* Do not use it in Brave Browser and Ungoogled Chromium
