@@ -14,6 +14,7 @@ In order to modify flags, you must access `chrome://flags`
 * #disallow-doc-written-script-loads
 	* Enabling it breaks `--blink-settings="preferredColorScheme=1"`
 	* If you use Brave Browser with Fingerprinting blocking Strict, just enable the flag
+* #dns-https-svcb
 * #enable-browsing-data-lifetime-manager
 * #enable-isolated-sandboxed-iframes
 * #enable-web-bluetooth-new-permissions-backend
@@ -21,14 +22,20 @@ In order to modify flags, you must access `chrome://flags`
 	* On Android, Go to Settings → Site Settings → Bluetooth → disable the permission
 * #enable-webrtc-hide-local-ips-with-mdns
 * #enable-webview-tag-site-isolation
+* #encrypted-client-hello
 * #isolate-origins
 * #partitioned-cookies
 * #reduce-user-agent
+* #reduce-user-agent-minor-version
+* #reduce-user-agent-platform-oscpu
 * #strict-origin-isolation
+* #third-party-storage-partitioning
+* #use-dns-https-svcb-alpn
 </p></details>
 
 <details><summary>Disabled:</summary><p>
 
+* #clipboard-unsanitized-content
 * #enable-async-dns
 * #enable-fenced-frames
 * #enable-first-party-sets
@@ -38,6 +45,7 @@ In order to modify flags, you must access `chrome://flags`
 * #enable-webusb-device-detection
 * #enable-winrt-geolocation-implementation
 	* You might need to enable it for Maps
+* #fedcm
 * #file-handling-api
 * #font-access
 * #full-user-agent
@@ -56,7 +64,7 @@ In order to modify flags, you must access `chrome://flags`
 
 <details><summary>Enabled</summary><p>
 
-* #download-bubble
+* #download-bubble, #download-bubble-v2
 	* If you prefer MS Edge's download bubble style, then enable it, yet it might not be stable
 * #enable-force-dark
 	* Personal preference
@@ -83,6 +91,7 @@ In order to modify flags, you must access `chrome://flags`
 
 <details><summary>Enabled</summary><p>
 
+* #align-wakeups
 * #back-forward-cache - **Enabled force caching all pages (experimntal)**
 	* Make sure you are using command line flags
 * #calculate-native-win-occlusion
@@ -97,14 +106,18 @@ In order to modify flags, you must access `chrome://flags`
 	* This flag is placebo when JITLess mode and/or Strict Security mode in MS Edge are activated
 * #overlay-strategies - **Occluded and unoccluded buffers (single-fullscreen,single-on-top,underlay)**
 	* Use this flag for Skylake or newer
+* #quick-intensive-throttling-after-loading
 * #subframe-shutdown-delay
 * #unthrottled-nested-timeout
+
 
 **These flags are not intented for every device, but worth testing.**
 
 Forcing them might be a bad idea. Therefore, before using them, please check out the Problems section by typing `chrome://gpu` into the address bar (ignore WebGL errors)
 
 * #enable-gpu-rasterization
+* #enable-waitable-swap-chain 
+	* **Enabled Max 1 Frame** has the **lowest delay** but is most likely to **drop frames**, while **3** has the **highest delay** but is least likely to drop frames.
 * #enable-zero-copy
 * #ignore-gpu-blocklist
 * #use-angle
@@ -138,6 +151,7 @@ These flags are from Nightly builds, some of them might not be available in othe
 * #brave-adblock-cname-uncloaking - **Enabled**
 	* If you notice DNS leak, disable it
 * #brave-adblock-cosmetic-filtering - **Enabled**
+* #brave-adblock-cosmetic-filtering-child-frames - **Enabled**
 * #brave-adblock-csp-rules - **Enabled**
 * #brave-adblock-default-1p-blocking - **Enabled**
 * #brave-dark-mode-block - **Enabled**
@@ -148,6 +162,7 @@ These flags are from Nightly builds, some of them might not be available in othe
 * #brave-ephemeral-storage - **Enabled**
 * #brave-ephemeral-storage-keep-alive - **Enabled**
 * #brave-extension-network-blocking - **Enabled**
+* #brave-federated - **Disabled**
 * #brave-first-party-ephemeral-storage - **Enabled**
 * #brave-reduce-language - **Enabled**
 * #brave-speedreader - **Enabled**
@@ -164,8 +179,9 @@ These flags are from Nightly builds, some of them might not be available in othe
 
 <details><summary>Bromite</summary><p>
 
-* #disable-webgl - Disabled
-	* It should be "Enabled" to actually disable WebGL, but it's a typo.
+* #cleartext-permitted - Disabled
+	* Disables accessing `http` websites
+* #dns-request-partitioning - Enabled
 * #num-raster-threads - 4
 </p></details>
 
@@ -178,16 +194,17 @@ These flags are from Nightly builds, some of them might not be available in othe
 * #edge-enable-bfcache-features - **Enabled**
 * #edge-global-media-controls - **Enabled**
 * #edge-haptics-api - **Disabled**
+* #edge-launch-timings - **Disabled**
 * #edge-log-textfield-lag - **Disabled**
 * #edge-msb-all-dse - **Disabled**
 * #edge-msb-keyword-mode - **Disabled**
 * #edge-playready-drm-win10 - **Disabled**
 	* Needed for Netflix, Spotify, etc.
+* #edge-reduce-user-agent-minor-version - **Enabled**
 * #edge-robin - **Enabled**
 * #edge-sdsm-emulate-acg - **Enabled**
 * #edge-show-feature-recommendations - **Disabled**
 * #edge-toast-winrt - **Disabled**
-* #edge-wdag-optional-network-isolation - **Enabled**
 * #edge-widevine-drm - **Disabled**
 	* Needed for Netflix, Spotify, etc.
 </p></details>
