@@ -154,6 +154,7 @@ These flags are from Nightly builds, some of them might not be available in othe
 * #brave-adblock-cosmetic-filtering-child-frames - **Enabled**
 * #brave-adblock-csp-rules - **Enabled**
 * #brave-adblock-default-1p-blocking - **Enabled**
+* #brave-block-screen-fingerprinting - **Enabled**
 * #brave-dark-mode-block - **Enabled**
 * #brave-de-amp - **Enabled**
 * #brave-debounce - **Enabled**
@@ -166,7 +167,17 @@ These flags are from Nightly builds, some of them might not be available in othe
 * #brave-first-party-ephemeral-storage - **Enabled**
 * #brave-reduce-language - **Enabled**
 * #brave-speedreader - **Enabled**
+* #brave-vertical-tabs - **Enabled**
+	* Personal preference; Useful when working with huge amount of tabs
 * #restrict-websockets-pool - **Enabled**
+
+Disable these flags incase you don't use them:
+
+* #brave-ipfs - **Disabled**
+* #brave-news - **Disabled**
+* #native-brave-wallet - **Disabled**
+* #skus-sdk - **Disabled**
+	* Brave VPN
 </p></details>
 
 <details><summary>Ungoogled Chromium</summary><p>
